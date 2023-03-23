@@ -1,0 +1,63 @@
+.bottomFooter {
+  background: #33323d;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 56px;
+  padding-bottom: 56px;
+  
+}
+
+.linksContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+footer a {
+  color: white;
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.socialIcon,
+.logo {
+  filter: invert(100%) sepia(93%) saturate(27%) hue-rotate(99deg)
+    brightness(107%) contrast(107%);
+}
+
+.socialContainer  {
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.interestedContainer {
+    
+    margin-top: 7.1875rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+}
+
+.interestedContainer h3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: -0.357143px;
+    color: #33323D;
+}

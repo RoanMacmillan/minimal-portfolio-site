@@ -1,0 +1,35 @@
+.navBtn {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  height: 3rem;
+  color: #33323d;
+  background: transparent;
+  border: 1px solid #33323d;
+}
+
+
+.contact {
+
+  width: 162px;
+  margin-top: 2.5rem;
+}
+
+.goto {
+
+  width: 12.625rem;
+  margin-top: 1.5rem;
+  margin-bottom: 3.1875rem;
+}
+
+.view {
+width: 10.9375rem;
+margin-top: 24px;
+margin-bottom: 1.5625rem;
+
+
+}

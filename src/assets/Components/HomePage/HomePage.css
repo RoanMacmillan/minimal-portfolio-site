@@ -1,0 +1,63 @@
+.mobileHero {
+  width: 100%;
+}
+
+main {
+
+    padding-left: 2rem;
+padding-right: 2rem;
+}
+
+main h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357143px;
+  color: #33323d;
+  margin-top: 1.5rem;
+}
+
+.aboutBtn {
+  background: #203a4c;
+  width: 12.5rem;
+  height: 3rem;
+  color: white;
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  margin-top: 32px;
+}
+
+.aboutContainer {
+  margin-top: 96px;
+}
+
+.aboutContainer h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357143px;
+  color: #33323d;
+  margin-top: 2rem;
+  margin-bottom: 1.75rem;
+}
+
+.aboutContainer p {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #33323d;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+
