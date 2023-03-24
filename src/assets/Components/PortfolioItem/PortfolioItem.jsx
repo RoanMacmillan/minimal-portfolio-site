@@ -1,25 +1,28 @@
-import React from 'react'
-import Button from '../../Components/Button/Button';
-import './PortfolioItem.css'
+import React from "react";
+import Button from "../../Components/Button/Button";
+import "./PortfolioItem.css";
+import { Link } from "react-router-dom";
 
-const PortfolioItem = ({imgSrc, title, description, className}) => {
-    return (
-      <div className={className}>
-        <div className='imageContainer'>
+const PortfolioItem = ({ id, imgSrc, title, description, className }) => {
+  return (
+    <div className={className} data-id={id}>
+      <div className="imageContainer">
         <div className="siteWrapper">
-          <img className="wave" src={imgSrc} alt={title}></img>
+          <img className="indexThumbnail" src={imgSrc} alt={title}></img>
         </div>
-        
-        <div className="line"></div>
-        </div>
-        <div className='contentContainer'>
+
+        <div className="line indexLine"></div>
+      </div>
+      <div className="contentContainer">
         <h2>{title}</h2>
         <p>{description}</p>
-        <Button text='view project' className='navBtn view' />
+        <Link to={`/portfolio/${id}`}>
+        <Button text="view project" className="navBtn view" />
+        </Link>
         <div className="line"></div>
-        </div>
       </div>
-    );
-  };
-  
-  export default PortfolioItem;
+    </div>
+  );
+};
+
+export default PortfolioItem;

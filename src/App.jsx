@@ -4,11 +4,12 @@ import HomePage from "./assets/Components/HomePage/HomePage";
 import Footer from "./assets/Components/Footer/Footer";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import PortfolioIndex from "./assets/Components/PortfolioIndex/PortfolioIndex";
+import PortfolioDetail from "./assets/Components/PortfolioDetail/PortfolioDetail";
+import portfolioItemsData from "../portfolioItemsData.json";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
+  
   return (
     <div className="App">
       <BrowserRouter>
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<HomePage />} />
           <Route path="/index" element={<PortfolioIndex />} />
+          <Route path='/portfolio/:id' element={<PortfolioDetail portfolioItemsData={portfolioItemsData} />} />
         </Routes>
         <Footer />
       </BrowserRouter>

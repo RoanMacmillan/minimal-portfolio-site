@@ -1,0 +1,39 @@
+.portfolioDetail {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.portfolioDetail h2 {
+  font-size: 40px;
+  line-height: 42px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.detailImageContainer {
+  margin-bottom: 2.5rem;
+}
+
+.portfolioDetail p {
+
+font-family: 'Public Sans';
+font-weight: 400;
+font-size: 15px;
+line-height: 30px;
+color: #33323D;
+mix-blend-mode: normal;
+opacity: 0.8;
+}
+
+.tools, .method {
+
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 30px;
+    /* identical to box height, or 231% */
+    
+    
+    color: #5FB4A2;
+}

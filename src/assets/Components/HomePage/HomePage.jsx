@@ -9,7 +9,7 @@ const HomePage = () => {
     <main>
       <div className="topContainer">
         <img className="mobileHero" src={MobileHero} alt="Mobile hero"></img>
-        <h1>Hey, I’m Alex Spencer and I love building beautiful websites</h1>
+        <h1>Hey, I’m Roan Macmillan and I love building beautiful websites</h1>
         <button className="aboutBtn" type="button">
           about me
         </button>
@@ -24,7 +24,7 @@ const HomePage = () => {
           company. I focus on writing accessible HTML, using modern CSS
           practices and writing clean JavaScript. When writing JavaScript code,
           I mostly use React, but I can adapt to whatever tools are required.
-          I’m based in London, UK, but I’m happy working remotely and have
+          I’m based in Edinburgh, Scotland, but I’m happy working remotely and have
           experience in remote teams. When I’m not coding, you’ll find me
           outdoors. I love being out in nature whether that’s going for a walk,
           run or cycling. I’d love you to check out my work.

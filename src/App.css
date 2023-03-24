@@ -50,21 +50,6 @@ video {
 
 
 
-/* index */
-
-
-.wave {
-  width: 100%;
-  padding-right: 2rem;
-  padding-left: 2rem;
-  margin-bottom: 2rem;
-}
-
-.siteWrapper {
-  background: #f2e1c296;
-  padding-top: 2rem;
-}
-
 .portfolioIndex h2 {
   font-weight: 700;
   font-size: 40px;
@@ -84,4 +69,26 @@ video {
   color: #33323d;
   mix-blend-mode: normal;
   opacity: 0.8;
+}
+
+
+/* gallery images padding */
+
+
+[data-id="1"] .siteWrapper {
+  background: #f2e1c296;
+  padding-top: 2rem;
+}
+
+
+
+[data-id='1'] .detailHero,
+[data-id='1'] .indexThumbnail {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  
+}
+
+[data-id="1"] .detail {
+  padding-top: 0rem !important;
 }
