@@ -26,8 +26,8 @@ const PortfolioDetail = ({ portfolioItemsData }) => {
       <div className="contentContainer">
         <h2>{title}</h2>
         <p>{description}</p>
-        <p className="method">{method}</p>
-        <p className="tools">{tools}</p>
+        <span className="method">{method}</span>
+        <span className="tools">{tools}</span>
         {/* Add more details as needed */}
       </div>
       <PortfolioNavigation currentIndex={currentIndex} portfolioItemsData={portfolioItemsData} />
