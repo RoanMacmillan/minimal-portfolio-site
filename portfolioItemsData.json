@@ -7,7 +7,11 @@
     "description": "This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.",
     "className": "portfolioItem",
     "method": "Interaction Design / Front End Development",
-    "tools": "vite / react / css /"
+    "tools": "vite / react / css",
+    "backgroundDescription": "This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.",
+    "galleryStaticOne": "/assets/images/detail/mobile/gallery-static-1.jpg",
+    "galleryStaticTwo": "/assets/images/detail/mobile/gallery-static-2.png"
+
   },
   {
     "id": "2",
@@ -16,7 +20,6 @@
     "title": "Project 2",
     "description": "This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.",
     "className": "portfolioItem"
-
   },
   {
     "id": "3",

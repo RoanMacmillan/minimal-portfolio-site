@@ -1,0 +1,87 @@
+.contactContainer {
+  padding-right: 2rem;
+  padding-left: 2rem;
+  width: 100%;
+}
+
+.contactContainer h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357143px;
+  color: #33323d;
+  margin-bottom: 1.5rem;
+}
+
+.contactContainer p {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: #33323d;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  margin-bottom: 1.5rem;
+  width: 98%;
+}
+
+.contactContainer .socialContainer {
+  margin-bottom: 2rem;
+}
+
+.contactContainer .socialIcon {
+  filter: unset;
+}
+
+/* form  */
+
+.formGroup {
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-family: "Public Sans";
+  font-weight: 700;
+  font-size: 13px;
+  color: #33323d;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+input,
+textarea {
+  width: 100%;
+
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  background: #33323d13;
+  font-family: "Public Sans";
+  padding-left: 1rem;
+}
+
+textarea {
+  padding-top: 0.5625rem;
+}
+
+input {
+  height: 3rem;
+}
+
+button[type="submit"] {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.formContainer h2 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357143px;
+  color: #33323d;
+}

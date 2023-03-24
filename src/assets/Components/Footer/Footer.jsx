@@ -2,13 +2,16 @@ import React from "react";
 import "./Footer.css";
 import Icon from "../Icons/Icon";
 import Button from "../Button/Button";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer>
       <div className="interestedContainer">
         <h3>Interested in doing a project together?</h3>
-        <Button text='contact me' className='navBtn contact'/>
+        <Link to="/contact-me">
+          <Button text="contact me" className="navBtn contact" type="button"/>
+        </Link>
       </div>
 
       <div className="bottomFooter">

@@ -17,7 +17,7 @@ const PortfolioItem = ({ id, imgSrc, title, description, className }) => {
         <h2>{title}</h2>
         <p>{description}</p>
         <Link to={`/portfolio/${id}`}>
-        <Button text="view project" className="navBtn view" />
+        <Button text="view project" className="navBtn view" type="button"/>
         </Link>
         <div className="line"></div>
       </div>

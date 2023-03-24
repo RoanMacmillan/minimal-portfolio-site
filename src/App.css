@@ -48,8 +48,6 @@ video {
   opacity: 0.15;
 }
 
-
-
 .portfolioIndex h2 {
   font-weight: 700;
   font-size: 40px;
@@ -71,24 +69,24 @@ video {
   opacity: 0.8;
 }
 
-
 /* gallery images padding */
 
-
 [data-id="1"] .siteWrapper {
-  background: #f2e1c296;
-  padding-top: 2rem;
+  background: #f2e1c263;
+  padding-top: 28px;
 }
 
-
-
-[data-id='1'] .detailHero,
-[data-id='1'] .indexThumbnail {
-  padding-left: 2rem;
-  padding-right: 2rem;
-  
+[data-id="1"] .detailHero,
+[data-id="1"] .indexThumbnail {
+  padding-left: 31px;
+  padding-right: 31px;
 }
 
 [data-id="1"] .detail {
   padding-top: 0rem !important;
+}
+
+[data-id="1"] .staticWrapper {
+  padding: 21px 25px 0px 25px;
+  background: #f2e1c263;
 }

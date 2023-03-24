@@ -30,7 +30,7 @@ const HomePage = () => {
           run or cycling. I’d love you to check out my work.
         </p>
         <Link to='/index'>
-        <Button text='go to portfolio' className='navBtn goto'/>
+        <Button text='go to portfolio' className='navBtn goto' type="button"/>
         </Link>
         <div className="line"></div>
       </div>

@@ -15,25 +15,58 @@
 }
 
 .portfolioDetail p {
-
-font-family: 'Public Sans';
-font-weight: 400;
-font-size: 15px;
-line-height: 30px;
-color: #33323D;
-mix-blend-mode: normal;
-opacity: 0.8;
+  font-family: "Public Sans";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: #33323d;
+  mix-blend-mode: normal;
+  opacity: 0.8;
 }
 
-.tools, .method {
+.tools,
+.method {
+  font-family: "Public Sans";
+  font-weight: 700 !important;
+  font-size: 13px !important;
+  line-height: 30px !important;
+  color: #5fb4a2 !important;
+}
 
-    font-family: 'Public Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 30px;
-    /* identical to box height, or 231% */
-    
-    
-    color: #5FB4A2;
+.tools {
+  text-transform: uppercase;
+}
+
+.method {
+  margin-top: 1.5rem;
+}
+
+.visit {
+  width: 11.125rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.portfolioDetail h3 {
+  margin-top: 3rem;
+  margin-bottom: 1.75rem;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: -0.285714px;
+  color: #33323d;
+}
+
+.portfolioDetail h4 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: -0.285714px;
+  color: #33323d;
+}
+
+.staticWrapper {
+  margin-top: 2rem;
 }

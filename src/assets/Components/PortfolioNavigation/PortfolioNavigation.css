@@ -1,0 +1,61 @@
+.navigation {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.detailBtn {
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-top: 1px solid #33323d28;
+  border-bottom: 1px solid #33323d28;
+  width: 100%;
+  cursor: pointer;
+}
+
+.next {
+
+    border-left: 1px solid #33323d28;
+}
+
+.next .arrowIcon {
+
+    margin-left: auto;
+}
+
+.arrowIcon {
+
+    margin-bottom: 1rem;
+}
+
+.next span {
+  margin-left: auto;
+}
+
+.buttonTitle {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: -0.285714px;
+  color: #33323d;
+}
+
+.buttonText {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #33323d;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.noTitle {
+
+    opacity: .5;
+}
