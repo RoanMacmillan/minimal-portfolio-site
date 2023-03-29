@@ -70,3 +70,108 @@
 .staticWrapper {
   margin-top: 2rem;
 }
+
+.desktopTest {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .testtt {
+    display: none;
+  }
+  .desktopTest {
+    display: unset;
+  }
+
+  .titleWrapper {
+    display: flex;
+    
+  }
+
+  .titleChild {
+    width: 50%;
+  }
+
+  .titleChild h2 {
+    margin-top: 2rem;
+    margin-bottom: 0 !important;
+  }
+
+  .visit {
+    margin-bottom: 2rem;
+  }
+
+  .method {
+    margin-top: 1rem;
+  }
+
+  .titleChild:last-of-type {
+    margin-top: auto;
+    margin-bottom: 2rem;
+  }
+
+  
+}
+
+
+@media screen and (min-width: 1154px) {
+
+  .testtt {
+
+    display: unset;
+  }
+
+  .desktopTest {
+
+    display: none;
+  }
+
+  .desktopDetailWrapper {
+
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+
+  .titleChild {
+
+    width: 350px !important;
+    
+  }
+
+  .titleChild h2 {
+
+    margin-bottom: 29px !important;
+    margin-top: 48px !important;
+  }
+
+  .backgroundContainer {
+
+    width: 635px;
+  }
+
+  .titleChild {
+
+    width: 100%;
+  }
+
+  .detailLine {
+    display: none;
+  }
+
+  .titleChild:last-of-type {
+    display: none;
+    
+  }
+
+  .portfolioDetail {
+
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}

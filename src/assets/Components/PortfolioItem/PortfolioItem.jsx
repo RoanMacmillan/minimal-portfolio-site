@@ -11,9 +11,11 @@ const PortfolioItem = ({ id, imgSrc, title, description, className }) => {
           <img className="indexThumbnail" src={imgSrc} alt={title}></img>
         </div>
 
-        <div className="line indexLine"></div>
       </div>
+
       <div className="contentContainer">
+      <div className="line indexLine"></div>
+
         <h2>{title}</h2>
         <p>{description}</p>
         <Link to={`/portfolio/${id}`}>

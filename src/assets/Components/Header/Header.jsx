@@ -3,9 +3,15 @@ import "./Header.css";
 import Hamburger from "../../images/icons/hamburger.svg";
 import CloseBtn from "../../images/icons/close.svg";
 import Icon from "../Icons/Icon";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 const Header = () => {
+
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const isActive = (path) => location.pathname === path ? 'activeLink' : '';
+
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const headerRef = useRef(null);
 
@@ -34,19 +40,22 @@ const Header = () => {
             src={CloseBtn}
             alt="Close button"
             onClick={() => setIsMobileMenuOpen(false)}
+            className='hamburger'
           />
         ) : (
           <img
             src={Hamburger}
             alt="Hamburger"
             onClick={() => setIsMobileMenuOpen(true)}
+            className='hamburger'
+
           />
         )}
 
         <div
           className={`mobileMenu ${isMobileMenuOpen ? "active" : "inactive"}`}
         >
-          <ul>
+          <ul className="mobileLinks">
             <Link to="/">
               <li>Home</li>
             </Link>
@@ -54,9 +63,24 @@ const Header = () => {
             <Link to='/index'>
             <li>Portfolio</li>
             </Link>
+            <Link to='/index'>
             <li>Contact</li>
+            </Link>
           </ul>
         </div>
+        <div className="desktopNav">
+  <ul className="desktopLinks">
+    <li className={isActive('/')} onClick={() => navigate('/')}>
+      Home
+    </li>
+    <li className={isActive('/index')} onClick={() => navigate('/index')}>
+      Portfolio
+    </li>
+    <li className={isActive('/contact-me')} onClick={() => navigate('/contact-me')}>
+      Contact
+    </li>
+  </ul>
+</div>
       </nav>
     </header>
   );

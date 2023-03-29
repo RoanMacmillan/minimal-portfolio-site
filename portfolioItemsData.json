@@ -9,32 +9,48 @@
     "method": "Interaction Design / Front End Development",
     "tools": "vite / react / css",
     "backgroundDescription": "This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.",
-    "galleryStaticOne": "/assets/images/detail/mobile/gallery-static-1.jpg",
-    "galleryStaticTwo": "/assets/images/detail/mobile/gallery-static-2.png"
-
+    "staticOne": "/assets/images/detail/mobile/gallery-static-1.jpg",
+    "staticTwo": "/assets/images/detail/mobile/gallery-static-2.png",
+    "staticThree": "/assets/images/detail/mobile/gallery-static-2.png",
+    "websiteUrl": "https://prismatic-bublanina-c0f8ef.netlify.app"
   },
   {
     "id": "2",
-    "imgSrc": "/assets/images/portfolio/tablet/image-portfolio-manage.jpg",
+    "imgSrc": "/assets/images/portfolio/desktop/image-portfolio-manage.jpg",
     "detailSrc": "/assets/images/detail/tablet/image-manage-hero@2x.jpg",
-    "title": "Project 2",
+    "title": "Manage",
     "description": "This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.",
-    "className": "portfolioItem"
+    "className": "portfolioItem manageItem",
+    "method": "Interaction Design / Front End Development",
+    "tools": "vite / react / css",
+    "staticOne": "/assets/images/detail/desktop/image-manage-preview-1@2x.jpg",
+    "staticTwo": "/assets/images/detail/desktop/image-manage-preview-2@2x.jpg",
+    "backgroundDescription": "This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style."
   },
   {
     "id": "3",
-    "imgSrc": "",
-    "detailImgSrc": "",
-    "title": "Project 2",
-    "description": "This is a description of project 2.",
-    "className": "portfolioItem"
+    "imgSrc": "/assets/images/portfolio/desktop/image-portfolio-bookmark.jpg",
+    "detailSrc": "/assets/images/detail/tablet/image-bookmark-hero@2x.jpg",
+    "title": "Bookmark",
+    "description": "This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.",
+    "className": "portfolioItem",
+    "method": "Interaction Design / Front End Development",
+    "tools": "vite / react / css",
+    "staticOne": "/assets/images/detail/desktop/image-bookmark-preview-1@2x.jpg",
+    "staticTwo": "/assets/images/detail/desktop/image-bookmark-preview-2@2x.jpg",
+    "backgroundDescription": "This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style."
   },
   {
     "id": "4",
-    "imgSrc": "",
-    "detailImgSrc": "",
+    "imgSrc": "/assets/images/portfolio/desktop/image-portfolio-insure.jpg",
+    "detailSrc": "/assets/images/detail/tablet/image-insure-hero@2x.jpg",
     "title": "Project 2",
-    "description": "This is a description of project 2.",
-    "className": "portfolioItem"
+    "description": "This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.",
+    "className": "portfolioItem insureItem",
+    "method": "Interaction Design / Front End Development",
+    "tools": "vite / react / css",
+    "staticOne": "/assets/images/detail/desktop/image-insure-preview-1@2x.jpg",
+    "staticTwo": "/assets/images/detail/desktop/image-insure-preview-2@2x.jpg",
+    "backgroundDescription": "This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style."
   }
 ]

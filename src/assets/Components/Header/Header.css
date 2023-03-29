@@ -3,7 +3,7 @@ header {
   margin-bottom: 2.5rem;
   position: relative;
   padding-left: 2rem;
-padding-right: 2rem;
+  padding-right: 2rem;
 }
 
 nav {
@@ -19,7 +19,7 @@ ul {
   gap: 2rem;
 }
 
-li {
+.mobileLinks li {
   text-align: center;
   font-weight: 400;
   font-size: 12px;
@@ -42,7 +42,6 @@ li {
   justify-content: center;
   align-items: center;
   width: 223px;
-  
 }
 
 .mobileMenu.active {
@@ -56,6 +55,55 @@ li {
   transition: all 0.2s ease;
   top: 50px;
   visibility: visible;
-
-
 }
+
+.desktopNav {
+  display: none;
+}
+
+/* media query for desktop nav menu  */
+
+@media (min-width: 468px) {
+  .mobileMenu {
+    display: none;
+  }
+
+  .activeLink {
+
+    color: #5FB4A2;
+
+  }
+
+  .desktopNav {
+    display: block;
+  }
+
+  .desktopLinks {
+    flex-direction: row;
+  }
+
+  .desktopLinks li {
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Public Sans";
+  }
+
+  .desktopLinks a {
+    text-decoration: none;
+  }
+
+  .desktopLinks a:hover {
+    text-decoration: underline;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+

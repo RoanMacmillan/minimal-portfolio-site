@@ -1,15 +1,77 @@
 .indexLine {
-
-    margin-top: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .portfolioItem {
-margin-top: 4.5rem;
-
+  margin-top: 4.5rem;
 }
 
-.portfolioItem:first-of-type{
+.portfolioItem:first-of-type {
+  margin-top: 0;
+}
 
+@media screen and (min-width: 768px) {
+  .portfolioItem {
+    display: flex;
+    gap: 4.3125rem;
+    align-items: center;
+    /* max-height: 418px; */
+    margin-top: 5rem;
+  }
+
+  .contentContainer {
+    min-width: 281px;
+    max-width: 350px;
+  }
+
+  .siteWrapper {
+    min-width: 339px;
+  }
+
+  .indexLine {
     margin-top: 0;
+  }
+
+  /* [data-id="1"] .siteWrapper {
+    max-width: 33.75rem;
+  } */
+
+  .manageItem {
+    flex-direction: row-reverse;
+  }
+
+  .insureItem {
+    flex-direction: row-reverse;
+  }
+
+  .contentContainer h2 {
+    margin-top: 2rem !important;
+  }
+
+  .view {
+    margin-bottom: 3.125rem;
+  }
 }
 
+@media screen and (min-width: 1154px) {
+  .portfolioItem {
+    max-width: 1111px;
+    margin-right: auto;
+    margin-left: auto;
+    gap: 125px;
+    padding-right: 96px;
+  }
+
+  
+
+  .manageItem,
+  .insureItem {
+    padding-right: 0;
+  }
+
+  .staticContainer {
+
+    display: flex;
+    gap: 32px;
+  }
+}
