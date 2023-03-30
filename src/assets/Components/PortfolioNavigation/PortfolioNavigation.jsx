@@ -10,43 +10,36 @@ const PortfolioNavigation = ({ currentIndex, portfolioItemsData }) => {
   const nextIndex = currentIndex + 1;
 
   const handlePreviousClick = () => {
-    if (previousIndex >= 0) {
-      navigate(`/portfolio/${portfolioItemsData[previousIndex].id}`);
-    }
+    const prevIndex = (currentIndex - 1 + portfolioItemsData.length) % portfolioItemsData.length;
+    navigate(`/portfolio/${portfolioItemsData[prevIndex].id}`);
   };
 
   const handleNextClick = () => {
-    if (nextIndex < portfolioItemsData.length) {
-      navigate(`/portfolio/${portfolioItemsData[nextIndex].id}`);
-    }
+    const nextIndex = (currentIndex + 1) % portfolioItemsData.length;
+    navigate(`/portfolio/${portfolioItemsData[nextIndex].id}`);
   };
 
-  const previousTitle = previousIndex >= 0 ? portfolioItemsData[previousIndex].title : '';
-  const nextTitle = nextIndex < portfolioItemsData.length ? portfolioItemsData[nextIndex].title : '';
+  const previousTitle =
+  portfolioItemsData[
+    (currentIndex - 1 + portfolioItemsData.length) % portfolioItemsData.length
+  ].title;
+const nextTitle = portfolioItemsData[(currentIndex + 1) % portfolioItemsData.length].title;
 
 
-  return (
-    <div className="navigation">
-       <button
-        className={`detailBtn previous ${previousIndex < 0 ? 'noTitle' : ''}`}
-        onClick={handlePreviousClick}
-        disabled={previousIndex < 0}
-      >
-        <img src={ArrowLeft} alt="Previous" className="arrowIcon" />
-        <span className="buttonTitle">{previousTitle}</span>
-        <span className="buttonText">Previous Project</span>
-      </button>
-      <button
-        className={`detailBtn next ${nextIndex >= portfolioItemsData.length ? 'noTitle' : ''}`}
-        onClick={handleNextClick}
-        disabled={nextIndex >= portfolioItemsData.length}
-      > 
-        <img src={ArrowRight} alt="Next" className="arrowIcon" />
-        <span className="buttonTitle">{nextTitle}</span>
-        <span className="buttonText">Next Project</span>
-      </button>
-    </div>
-  );
+return (
+  <div className="navigation">
+    <button className="detailBtn previous" onClick={handlePreviousClick}>
+      <img src={ArrowLeft} alt="Previous" className="arrowIcon" />
+      <span className="buttonTitle">{previousTitle}</span>
+      <span className="buttonText">Previous Project</span>
+    </button>
+    <button className="detailBtn next" onClick={handleNextClick}>
+      <img src={ArrowRight} alt="Next" className="arrowIcon" />
+      <span className="buttonTitle">{nextTitle}</span>
+      <span className="buttonText">Next Project</span>
+    </button>
+  </div>
+);
 };
 
 export default PortfolioNavigation;
