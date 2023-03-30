@@ -66,7 +66,7 @@ const HomePage = ({className}) => {
             <Button
               text="go to portfolio"
               className="navBtn goto"
-              type="button"
+              
             />
           </Link>
           <div className="line"></div>

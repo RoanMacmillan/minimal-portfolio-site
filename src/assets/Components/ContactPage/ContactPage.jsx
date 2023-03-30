@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./ContactPage.css";
 import Icon from "../Icons/Icon";
-import Button from "../Button/Button.jsx";
 
 const ContactPage = ({ className }) => {
   const [name, setName] = useState("");
@@ -167,7 +166,7 @@ const ContactPage = ({ className }) => {
               ></textarea>
             </div>
             <div className="tyContainer">
-              <Button className="aboutBtn" type="submit" text="Send Message" />
+              <button className="aboutBtn">Send Message</button>
               {formSubmitted && (
                 <p className="thankyouMessage">
                   Thank you for contacting me! I'll get back to you as soon as

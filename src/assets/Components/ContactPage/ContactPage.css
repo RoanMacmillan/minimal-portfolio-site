@@ -72,10 +72,16 @@ input {
   height: 3rem;
 }
 
-button[type="submit"] {
+.tyContainer .aboutBtn {
+
   margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 25px;
 }
+
+
 
 .formContainer h2 {
   margin-top: 2rem;
@@ -108,6 +114,7 @@ textarea::placeholder {
   margin-top: 0;
   margin-bottom: 2rem;
   width: 100%;
+  
 }
 
 .thankyouMessage {
