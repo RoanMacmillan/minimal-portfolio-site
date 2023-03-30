@@ -41,6 +41,50 @@ video {
   max-width: 100%;
 }
 
+/* transitions */
+
+.galleriaItem,
+.bookmarkItem {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.galleriaItem.loaded,
+.bookmarkItem.loaded {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.manageItem,
+.insureItem {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.manageItem.loaded,
+.insureItem.loaded,
+.topContainer.loaded,
+.aboutContainer.loaded {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.topContainer {
+  opacity: 0;
+  transform: translateX(10px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.aboutContainer {
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* ------- */
+
 .line {
   width: 100%;
   height: 1px;
@@ -99,6 +143,16 @@ video {
 [data-id="1"] .staticWrapper {
   padding: 28px 28px 28px 28px;
   background: #f2e1c263;
+}
+
+.visit:disabled {
+  opacity: 0.25 !important;
+  cursor: not-allowed;
+}
+
+.visit:hover:disabled {
+  background: unset;
+  color: unset;
 }
 
 .aboutBtn {

@@ -28,6 +28,12 @@ const PortfolioDetail = ({ portfolioItemsData }) => {
     staticThree
   } = portfolioItem;
 
+
+  const shouldDisableButton = (id) => {
+    const disabledIds = ["2", "3", "4"];
+    return disabledIds.includes(id);
+  };
+
   return (
     <div className="portfolioDetail" data-id={id}>
       <div className="detailImageContainer">
@@ -51,6 +57,7 @@ const PortfolioDetail = ({ portfolioItemsData }) => {
                 text="visit website"
                 className="navBtn visit"
                 type="button"
+                disabled={shouldDisableButton(id)}
               />
             </Link>
                     

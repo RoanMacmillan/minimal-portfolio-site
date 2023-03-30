@@ -1,4 +1,4 @@
-import React, { useRef, useCallback } from "react";
+import React, { useRef, useCallback, useState, useEffect } from "react";
 import "./HomePage.css";
 import DesktopHero from "../../images/homepage/desktop/image-homepage-hero@2x.jpg";
 import TabletHero from "../../images/homepage/tablet/image-homepage-hero.jpg";
@@ -6,8 +6,15 @@ import ProfilePic from "../../images/homepage/mobile/image-homepage-profile@2x.j
 import ButtonIcon from '../../images/icons/down-arrows.svg';
 import Button from "../Button/Button";
 import { Link } from "react-router-dom";
-const HomePage = () => {
+const HomePage = ({className}) => {
   const aboutRef = useRef(null);
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoaded(true);
+    }, 25);
+  }, []);
 
   const scrollToAbout = useCallback(() => {
     const aboutElement = aboutRef.current;
@@ -16,7 +23,7 @@ const HomePage = () => {
 
   return (
     <main>
-      <div className="topContainer">
+      <div className={`topContainer ${className} ${loaded ? 'loaded' : ''} `}>
         <div className="heroImgWrapper">
           <img className="mobileHero" src={TabletHero} alt="Mobile hero"></img>
           <img
@@ -38,7 +45,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div ref={aboutRef} className="aboutContainer">
+      <div ref={aboutRef} className={`aboutContainer ${className} ${loaded ? 'loaded' : ''} `}>
         <div className="aboutChild profileWrapper">
           <img className="profilePic" src={ProfilePic} alt="Profile"></img>
         </div>

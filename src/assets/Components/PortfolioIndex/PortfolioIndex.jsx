@@ -14,6 +14,7 @@ const PortfolioIndex = () => {
           title={item.title}
           description={item.description}
           className={item.className}
+          delay={index * 100}
         />
       ))}
     </div>
