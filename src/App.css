@@ -25,11 +25,14 @@ html {
 /* min body height */
 
 body {
-  background: white;
+  background: #FAFAFA;
+  
 }
 
 .App {
   min-height: 100vh;
+  
+  
 }
 
 /* responsive images/videos */
@@ -168,6 +171,9 @@ video {
     margin-left: 1px;
   }
 }
+
+
+/* was supposed to be in './PortfolioItem.css' but encountered deploy issue */
 
 
 .indexLine {

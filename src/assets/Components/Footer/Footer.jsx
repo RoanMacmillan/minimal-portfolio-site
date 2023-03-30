@@ -12,6 +12,7 @@ const Footer = () => {
       {location.pathname !== "/contact-me" && (
         <div className="interestedContainer">
           <h3>Interested in doing a project together?</h3>
+          <div className="line interestedLine"></div>
           <Link to="/contact-me">
             <Button
               text="contact me"

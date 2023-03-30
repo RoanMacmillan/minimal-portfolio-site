@@ -77,7 +77,7 @@ const Header = () => {
       Portfolio
     </li>
     <li className={isActive('/contact-me')} onClick={() => navigate('/contact-me')}>
-      Contact
+      Contact me
     </li>
   </ul>
 </div>

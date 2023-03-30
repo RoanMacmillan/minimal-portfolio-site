@@ -20,7 +20,6 @@ main h1 {
   background: #203a4c;
   width: 12.5rem;
   height: 3rem;
-  color: white;
   font-family: "Public Sans";
   font-style: normal;
   font-weight: 400;
@@ -29,7 +28,7 @@ main h1 {
   text-align: center;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #FAFAFA;
   border: none;
   margin-top: 32px;
 }
@@ -65,7 +64,7 @@ main h1 {
 
 @media screen and (min-width: 768px) {
   .aboutMeWrapper {
-    background: white !important;
+    background: #FAFAFA !important;
 
     z-index: 5000;
     width: 75%;
@@ -174,6 +173,6 @@ main h1 {
   }
 
   .aboutChild p {
-    width: 100%;
+    width: 348px;
   }
 }

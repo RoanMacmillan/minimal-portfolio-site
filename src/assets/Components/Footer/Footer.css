@@ -1,13 +1,11 @@
 .bottomFooter {
   background: #33323d;
-  
+
   padding-top: 56px;
   padding-bottom: 56px;
-  
 }
 
 .footerWrapper {
-
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -23,7 +21,7 @@
 }
 
 footer a {
-  color: white;
+  color: #fafafa;
   font-family: "Public Sans";
   font-style: normal;
   font-weight: 400;
@@ -38,76 +36,67 @@ footer a {
 .logo {
   filter: invert(100%) sepia(93%) saturate(27%) hue-rotate(99deg)
     brightness(107%) contrast(107%);
-    transition: all .2s ease;
-    
+  transition: all 0.2s ease;
 }
 
-.socialContainer  {
-
-    display: flex;
-    align-items: center;
-    gap: 15px;
+.socialContainer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
-
 
 .interestedContainer {
-    
-    margin-top: 7.1875rem;
-    margin-bottom: 5rem;
-    text-align: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
+  margin-top: 7.1875rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
 
+.interestedLine {
+  display: none;
 }
 
 .interestedContainer h3 {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 42px;
-    text-align: center;
-    letter-spacing: -0.357143px;
-    color: #33323D;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: -0.357143px;
+  color: #33323d;
 }
 
-.linksContainer a{
-
+.linksContainer a {
   text-decoration: none;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
 }
 
 .linksContainer a:hover {
-
-  color: #5FB4A2;
+  color: #5fb4a2;
 }
 
 .socialIcon:hover {
-
-  filter: invert(62%) sepia(51%) saturate(321%) hue-rotate(117deg) brightness(95%) contrast(88%);
+  filter: invert(62%) sepia(51%) saturate(321%) hue-rotate(117deg)
+    brightness(95%) contrast(88%);
 }
 
 @media screen and (min-width: 768px) {
-
   .interestedContainer {
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
   }
 
   .interestedContainer h3 {
-
     text-align: left;
     width: 21.875rem;
   }
 
   .contact {
-
     margin: 0;
   }
 
   .bottomFooter {
-    
     padding-right: 2rem;
     padding-left: 2rem;
     padding-top: 0;
@@ -115,7 +104,6 @@ footer a {
   }
 
   .footerWrapper {
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -126,18 +114,31 @@ footer a {
     margin-left: 3rem;
     flex-direction: row;
   }
-
-  
 }
 
-
 @media screen and (min-width: 1300px) {
-
-
   .interestedContainer {
-
     margin-top: 150px;
     margin-bottom: 150px;
   }
-}
 
+  .interestedLine {
+    display: unset;
+    width: 534px !important;
+  }
+
+  footer {
+    margin-top: auto;
+  }
+
+  .App {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+
+  
+  width: 100%;
+  }
+}
