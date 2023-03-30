@@ -88,6 +88,13 @@ footer a {
   color: #5fb4a2;
 }
 
+.interestedContainer .navBtn {
+
+ 
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .socialIcon:hover {
   filter: invert(62%) sepia(51%) saturate(321%) hue-rotate(117deg)
     brightness(95%) contrast(88%);
