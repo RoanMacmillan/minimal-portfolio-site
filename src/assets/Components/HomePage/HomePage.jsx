@@ -3,10 +3,10 @@ import "./HomePage.css";
 import DesktopHero from "../../images/homepage/desktop/image-homepage-hero@2x.jpg";
 import TabletHero from "../../images/homepage/tablet/image-homepage-hero.jpg";
 import ProfilePic from "../../images/homepage/mobile/image-homepage-profile@2x.jpg";
-import ButtonIcon from '../../images/icons/down-arrows.svg';
+import ButtonIcon from "../../images/icons/down-arrows.svg";
 import Button from "../Button/Button";
 import { Link } from "react-router-dom";
-const HomePage = ({className}) => {
+const HomePage = ({ className }) => {
   const aboutRef = useRef(null);
   const [loaded, setLoaded] = useState(false);
 
@@ -18,12 +18,12 @@ const HomePage = ({className}) => {
 
   const scrollToAbout = useCallback(() => {
     const aboutElement = aboutRef.current;
-    aboutElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    aboutElement.scrollIntoView({ behavior: "smooth", block: "center" });
   }, []);
 
   return (
     <main>
-      <div className={`topContainer ${className} ${loaded ? 'loaded' : ''} `}>
+      <div className={`topContainer ${className} ${loaded ? "loaded" : ""} `}>
         <div className="heroImgWrapper">
           <img className="mobileHero" src={TabletHero} alt="Mobile hero"></img>
           <img
@@ -34,24 +34,30 @@ const HomePage = ({className}) => {
         </div>
         <div className="aboutMeWrapper">
           <h1>Hey, I’m Alex Spencer and I love building beautiful websites</h1>
-          
-          <button className="aboutBtn scrollDownBtn" type="button" onClick={scrollToAbout}>
-            <div className="scrollDownWrapper">
-            <img src={ButtonIcon} alt='Button Icon'></img>
-            </div>
+
+          <button
+            className="aboutBtn scrollDownBtn"
+            type="button"
+            onClick={scrollToAbout}
+          >
+            {/* <div className="scrollDownWrapper"> */}
+              <img className="arrowDown" src={ButtonIcon} alt="Button Icon"></img>
+            {/* </div> */}
             <span>about me</span>
-            
           </button>
         </div>
       </div>
 
-      <div ref={aboutRef} className={`aboutContainer ${className} ${loaded ? 'loaded' : ''} `}>
+      <div
+        ref={aboutRef}
+        className={`aboutContainer ${className} ${loaded ? "loaded" : ""} `}
+      >
         <div className="aboutChild profileWrapper">
           <img className="profilePic" src={ProfilePic} alt="Profile"></img>
         </div>
         <div className="aboutChild">
           <div className="line imgLine"></div>
-          <h2 >About Me</h2>
+          <h2>About Me</h2>
           <p>
             I’m a junior front-end developer looking for a new role in an
             exciting company. I focus on writing accessible HTML, using modern
@@ -63,11 +69,7 @@ const HomePage = ({className}) => {
             for a walk, run or cycling. I’d love you to check out my work.
           </p>
           <Link to="/index">
-            <Button
-              text="go to portfolio"
-              className="navBtn goto"
-              
-            />
+            <Button text="go to portfolio" className="navBtn goto" />
           </Link>
           <div className="line"></div>
         </div>

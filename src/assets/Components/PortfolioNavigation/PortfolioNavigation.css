@@ -25,6 +25,16 @@
   margin-left: auto;
 }
 
+.previous .arrowIcon {
+
+  margin-right: auto;
+}
+
+.previous span {
+
+  margin-right: auto;
+}
+
 .arrowIcon {
   margin-bottom: 1rem;
 }

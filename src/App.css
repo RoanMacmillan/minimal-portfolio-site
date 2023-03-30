@@ -32,6 +32,10 @@ body {
   min-height: 100vh;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 /* responsive images/videos */
 img,
 picture,

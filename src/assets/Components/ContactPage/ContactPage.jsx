@@ -166,7 +166,7 @@ const ContactPage = ({ className }) => {
               ></textarea>
             </div>
             <div className="tyContainer">
-              <button className="aboutBtn">Send Message</button>
+              <button className="aboutBtn" type="submit">Send Message</button>
               {formSubmitted && (
                 <p className="thankyouMessage">
                   Thank you for contacting me! I'll get back to you as soon as

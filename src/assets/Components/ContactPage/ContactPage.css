@@ -128,6 +128,11 @@ textarea::placeholder {
   outline: 1px solid #5FB4A2;
 }
 
+.tyContainer {
+
+  margin-bottom: 50px;
+}
+
 
 @media screen and (min-width: 1000px) {
 
@@ -165,17 +170,27 @@ textarea::placeholder {
 
   button[type="submit"] {
     
-    margin-bottom: 75px;
+    margin-bottom: 0px !important;
+    
   }
 
   .tyContainer {
+
+    flex-direction: column;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* width: 100%; */
     position: relative;
+    margin-bottom: 75px;
+    
   }
 
   .thankyouMessage {
-
+    
+    width: 100% !important;
     position: absolute;
-    bottom: 0;
+    bottom: -70px;
   }
  
 
