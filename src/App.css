@@ -57,7 +57,8 @@ video {
 }
 
 .manageItem,
-.insureItem {
+.insureItem,
+.contactContainer {
   opacity: 0;
   transform: translateX(20px);
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
@@ -66,7 +67,8 @@ video {
 .manageItem.loaded,
 .insureItem.loaded,
 .topContainer.loaded,
-.aboutContainer.loaded {
+.aboutContainer.loaded,
+.contactContainer.loaded {
   opacity: 1;
   transform: translateX(0);
 }
@@ -77,11 +79,30 @@ video {
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-.aboutContainer {
+.aboutContainer
+ {
   opacity: 0;
   transform: translateX(-10px);
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
+
+.portfolioDetail
+ {
+
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+}
+
+.portfolioDetail.loaded
+{
+
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 
 /* ------- */
 

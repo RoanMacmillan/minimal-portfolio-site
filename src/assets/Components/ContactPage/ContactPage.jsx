@@ -4,12 +4,20 @@ import "./ContactPage.css";
 import Icon from "../Icons/Icon";
 import Button from "../Button/Button.jsx";
 
-const ContactPage = () => {
+const ContactPage = ({ className }) => {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [email, setEmail] = useState("");
   const [errors, setErrors] = useState({});
   const [formSubmitted, setFormSubmitted] = useState(false);
+
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoaded(true);
+    }, 30);
+  }, []);
 
   const validateName = (name) => {
     if (name.trim() === "") {
@@ -61,7 +69,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="contactContainer">
+    <div className={`contactContainer ${className} ${loaded ? "loaded" : ""}`}>
       <div className="touchContainer">
         <div className="headingChild">
           <h1>Get in Touch</h1>
@@ -79,8 +87,8 @@ const ContactPage = () => {
             profiles below and get in touch using the form.
           </p>
           <div className="socialContainer">
-          <Link to='https://github.com/RoanMacmillan'>
-            <Icon name="github" className="socialIcon" />
+            <Link to="https://github.com/RoanMacmillan">
+              <Icon name="github" className="socialIcon" />
             </Link>
             <Link to="https://twitter.com/Petequinnn">
               <Icon name="twitter" className="socialIcon" />
@@ -103,7 +111,13 @@ const ContactPage = () => {
 
               <input
                 // className={`mobileMenu ${isMobileMenuOpen ? "active" : "inactive"}`}
-                className={`formInput ${errors.name ? "inputError" : validateName(name) === "" ? "validInput" : ""}`}
+                className={`formInput ${
+                  errors.name
+                    ? "inputError"
+                    : validateName(name) === ""
+                    ? "validInput"
+                    : ""
+                }`}
                 type="text"
                 id="name"
                 name="name"
@@ -117,7 +131,13 @@ const ContactPage = () => {
               {errors.email && <div className="error">{errors.email}</div>}
 
               <input
-                className={`formInput ${errors.email ? "inputError" : validateEmail(email) === "" ? "validInput" : ""}`}
+                className={`formInput ${
+                  errors.email
+                    ? "inputError"
+                    : validateEmail(email) === ""
+                    ? "validInput"
+                    : ""
+                }`}
                 type="email"
                 id="email"
                 name="email"
@@ -131,7 +151,13 @@ const ContactPage = () => {
               {errors.message && <div className="error">{errors.message}</div>}
 
               <textarea
-                className={`formInput ${errors.message ? "inputError" : message.trim() !== "" ? "validInput" : ""}`}
+                className={`formInput ${
+                  errors.message
+                    ? "inputError"
+                    : message.trim() !== ""
+                    ? "validInput"
+                    : ""
+                }`}
                 id="message"
                 name="message"
                 rows="4"
@@ -141,13 +167,13 @@ const ContactPage = () => {
               ></textarea>
             </div>
             <div className="tyContainer">
-            <Button className="aboutBtn" type="submit" text="Send Message" />
-            {formSubmitted && (
-              <p className="thankyouMessage">
-                Thank you for contacting me! I'll get back to you as soon as
-                possible.
-              </p>
-            )}
+              <Button className="aboutBtn" type="submit" text="Send Message" />
+              {formSubmitted && (
+                <p className="thankyouMessage">
+                  Thank you for contacting me! I'll get back to you as soon as
+                  possible.
+                </p>
+              )}
             </div>
           </form>
         </div>
