@@ -17,7 +17,7 @@ const Footer = () => {
             <Button
               text="contact me"
               className="navBtn contact"
-              type="button"
+              
             />
           </Link>
         </div>

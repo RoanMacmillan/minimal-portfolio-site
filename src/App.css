@@ -83,30 +83,22 @@ video {
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-.aboutContainer
- {
+.aboutContainer {
   opacity: 0;
   transform: translateX(-10px);
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
-.portfolioDetail
- {
-
+.portfolioDetail {
   opacity: 0;
   transform: translateY(-20px);
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-
 }
 
-.portfolioDetail.loaded
-{
-
+.portfolioDetail.loaded {
   opacity: 1;
   transform: translateY(0);
 }
-
-
 
 /* ------- */
 
@@ -170,12 +162,16 @@ video {
   background: #f2e1c263;
 }
 
-.visit:disabled {
+[data-id="2"] .visit,
+[data-id="3"] .visit,
+[data-id="4"] .visit {
   opacity: 0.25 !important;
   cursor: not-allowed;
 }
 
-.visit:hover:disabled {
+[data-id="2"] .visit:hover,
+[data-id="3"] .visit:hover,
+[data-id="4"] .visit:hover {
   background: unset;
   color: unset;
 }
