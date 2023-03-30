@@ -74,7 +74,7 @@ input {
 
 button[type="submit"] {
   margin-top: 0;
-  margin-bottom: 5rem;
+  margin-bottom: 25px;
 }
 
 .formContainer h2 {
@@ -92,30 +92,86 @@ textarea::placeholder {
   opacity: 0.4;
 }
 
-
 .error {
-
-    margin-bottom: .5rem;
-    color: red;
-    font-size: .75rem;
-    font-weight: 400;
-    font-family: 'Public Sans';
+  margin-bottom: 0.5rem;
+  color: red;
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: "Public Sans";
 }
 
 .inputError {
-
   border: 1px solid red;
 }
 
 .formBtn {
-
   margin-top: 0;
   margin-bottom: 2rem;
   width: 100%;
 }
 
-.thankyouMessage p {
-
+.thankyouMessage {
   line-height: 25px;
+  color: #5FB4A2 !important;
+
+}
+
+.validInput {
+
+  outline: 1px solid #5FB4A2;
+}
+
+
+@media screen and (min-width: 1000px) {
+
+
+  .contactContainer {
+
+    max-width: 1174px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+
+  }
+
+  .touchContainer,
+  .formContainer {
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .touchContainer {
+
+    margin-bottom: 48px;
+  }
+
+  .formContainer {
+
+    margin-top: 48px;
+  }
+
+  .contactContentChild {
+
+    width: 635px;
+  }
+
+  button[type="submit"] {
+    
+    margin-bottom: 75px;
+  }
+
+  .tyContainer {
+    position: relative;
+  }
+
+  .thankyouMessage {
+
+    position: absolute;
+    bottom: 0;
+  }
+ 
+
+  
 
 }

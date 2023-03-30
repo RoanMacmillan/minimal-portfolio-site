@@ -5,7 +5,6 @@
 main {
   padding-left: 2rem;
   padding-right: 2rem;
-  
 }
 
 main h1 {
@@ -67,7 +66,7 @@ main h1 {
 @media screen and (min-width: 768px) {
   .aboutMeWrapper {
     background: white !important;
-    
+
     z-index: 5000;
     width: 75%;
     padding-right: 3.5rem;
@@ -97,7 +96,6 @@ main h1 {
     display: flex;
     gap: 4.3125rem;
     height: 600px;
-    
   }
 
   .aboutChild p {
@@ -134,9 +132,8 @@ main h1 {
 
   .desktopHeroHome {
     display: unset;
-    object-fit:cover;
+    object-fit: cover;
     object-position: left;
-    
   }
 
   .aboutMeWrapper {
@@ -146,7 +143,6 @@ main h1 {
     padding-top: 0px !important;
     bottom: 0;
     left: -1px;
-    
   }
 
   .aboutMeWrapper h1 {
@@ -162,7 +158,6 @@ main h1 {
   .heroImgWrapper {
     display: flex;
     height: 600px;
-    
   }
 
   .aboutMeWrapper button {
@@ -170,12 +165,15 @@ main h1 {
   }
 
   .aboutContainer {
-
     gap: 7.8125rem;
     margin-top: 150px;
   }
 
-  
+  .aboutChild:last-of-type {
+    width: 350px;
+  }
 
- 
+  .aboutChild p {
+    width: 100%;
+  }
 }

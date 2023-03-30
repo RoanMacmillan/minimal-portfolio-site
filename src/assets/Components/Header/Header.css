@@ -69,9 +69,7 @@ ul {
   }
 
   .activeLink {
-
-    color: #5FB4A2;
-
+    color: #5fb4a2;
   }
 
   .desktopNav {
@@ -104,6 +102,12 @@ ul {
   .hamburger {
     display: none;
   }
+
+  .desktopLinks {
+    gap: 2.625rem;
+  }
+
+  .desktopLinks li:last-of-type {
+    margin-left: 1px;
+  }
 }
-
-

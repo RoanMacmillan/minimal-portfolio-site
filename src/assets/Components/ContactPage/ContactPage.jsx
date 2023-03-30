@@ -63,30 +63,39 @@ const ContactPage = () => {
   return (
     <div className="contactContainer">
       <div className="touchContainer">
-        <h1>Get in Touch</h1>
-        <p>
-          I’d love to hear about what you’re working on and how I could help.
-          I’m currently looking for a new role and am open to a wide range of
-          opportunities. My preference would be to find a position in a company
-          in London. But I’m also happy to hear about opportunites that don’t
-          fit that description. I’m a hard-working and positive person who will
-          always approach each task with a sense of purpose and attention to
-          detail. Please do feel free to check out my online profiles below and
-          get in touch using the form.
-        </p>
-        <div className="socialContainer">
-          <Icon name="github" className="socialIcon" />
-          <Link to="https://twitter.com/Petequinnn">
-            <Icon name="twitter" className="socialIcon" />
-          </Link>
-          <Icon name="linkedin" className="socialIcon" />
+        <div className="headingChild">
+          <h1>Get in Touch</h1>
+        </div>
+
+        <div className="contactContentChild">
+          <p>
+            I’d love to hear about what you’re working on and how I could help.
+            I’m currently looking for a new role and am open to a wide range of
+            opportunities. My preference would be to find a position in a
+            company in London. But I’m also happy to hear about opportunites
+            that don’t fit that description. I’m a hard-working and positive
+            person who will always approach each task with a sense of purpose
+            and attention to detail. Please do feel free to check out my online
+            profiles below and get in touch using the form.
+          </p>
+          <div className="socialContainer">
+          <Link to='https://github.com/RoanMacmillan'>
+            <Icon name="github" className="socialIcon" />
+            </Link>
+            <Link to="https://twitter.com/Petequinnn">
+              <Icon name="twitter" className="socialIcon" />
+            </Link>
+            <Icon name="linkedin" className="socialIcon" />
+          </div>
         </div>
       </div>
       <div className="line"></div>
 
       <div className="formContainer">
-        <h2>Contact Me</h2>
-        {!formSubmitted ? (
+        <div className="headingChild">
+          <h2>Contact Me</h2>
+        </div>
+        <div className="contactContentChild">
           <form onSubmit={handleSubmit} noValidate>
             <div className="formGroup">
               <label htmlFor="name">Name</label>
@@ -94,7 +103,7 @@ const ContactPage = () => {
 
               <input
                 // className={`mobileMenu ${isMobileMenuOpen ? "active" : "inactive"}`}
-                className={`formInput ${errors.name ? "inputError" : ""}`}
+                className={`formInput ${errors.name ? "inputError" : validateName(name) === "" ? "validInput" : ""}`}
                 type="text"
                 id="name"
                 name="name"
@@ -108,7 +117,7 @@ const ContactPage = () => {
               {errors.email && <div className="error">{errors.email}</div>}
 
               <input
-                className={`formInput ${errors.email ? "inputError" : ""}`}
+                className={`formInput ${errors.email ? "inputError" : validateEmail(email) === "" ? "validInput" : ""}`}
                 type="email"
                 id="email"
                 name="email"
@@ -122,7 +131,7 @@ const ContactPage = () => {
               {errors.message && <div className="error">{errors.message}</div>}
 
               <textarea
-                className={`formInput ${errors.message ? "inputError" : ""}`}
+                className={`formInput ${errors.message ? "inputError" : message.trim() !== "" ? "validInput" : ""}`}
                 id="message"
                 name="message"
                 rows="4"
@@ -131,22 +140,17 @@ const ContactPage = () => {
                 onChange={(event) => setMessage(event.target.value)}
               ></textarea>
             </div>
+            <div className="tyContainer">
             <Button className="aboutBtn" type="submit" text="Send Message" />
+            {formSubmitted && (
+              <p className="thankyouMessage">
+                Thank you for contacting me! I'll get back to you as soon as
+                possible.
+              </p>
+            )}
+            </div>
           </form>
-        ) : (
-          <div className="thankyouMessage">
-            <p>
-              Thank you for contacting me! I'll get back to you as soon as
-              possible.
-            </p>
-            <Button
-              className="aboutBtn formBtn"
-              type="button"
-              text="Send another message"
-              onClick={() => setFormSubmitted(false)}
-            />
-          </div>
-        )}
+        </div>
       </div>
     </div>
   );

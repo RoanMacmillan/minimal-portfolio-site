@@ -10,6 +10,13 @@
   color: #33323d;
   background: transparent;
   border: 1px solid #33323d;
+  transition: all .2s ease;
+}
+
+.navBtn:hover {
+
+  background: #33323D;
+  color: white;
 }
 
 

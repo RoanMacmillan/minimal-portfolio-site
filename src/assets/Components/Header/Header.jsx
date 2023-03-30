@@ -63,7 +63,7 @@ const Header = () => {
             <Link to='/index'>
             <li>Portfolio</li>
             </Link>
-            <Link to='/index'>
+            <Link to='/contact-me'>
             <li>Contact</li>
             </Link>
           </ul>

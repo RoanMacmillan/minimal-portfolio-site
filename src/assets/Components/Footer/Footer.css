@@ -38,6 +38,8 @@ footer a {
 .logo {
   filter: invert(100%) sepia(93%) saturate(27%) hue-rotate(99deg)
     brightness(107%) contrast(107%);
+    transition: all .2s ease;
+    
 }
 
 .socialContainer  {
@@ -65,6 +67,22 @@ footer a {
     text-align: center;
     letter-spacing: -0.357143px;
     color: #33323D;
+}
+
+.linksContainer a{
+
+  text-decoration: none;
+  transition: all .2s ease;
+}
+
+.linksContainer a:hover {
+
+  color: #5FB4A2;
+}
+
+.socialIcon:hover {
+
+  filter: invert(62%) sepia(51%) saturate(321%) hue-rotate(117deg) brightness(95%) contrast(88%);
 }
 
 @media screen and (min-width: 768px) {

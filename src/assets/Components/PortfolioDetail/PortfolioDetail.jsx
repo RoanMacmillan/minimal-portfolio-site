@@ -75,9 +75,9 @@ const PortfolioDetail = ({ portfolioItemsData }) => {
         <div className="staticWrapper">
           <img className="staticTwo" src={staticTwo} alt={title} />
         </div>
-        <div className="staticWrapper three">
+        {/* <div className="staticWrapper three">
           <img className="staticThree" src={staticThree} alt={title} />
-        </div>
+        </div> */}
         </div>
       </div>
       <PortfolioNavigation
