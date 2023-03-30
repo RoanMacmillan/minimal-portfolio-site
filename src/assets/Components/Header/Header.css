@@ -107,7 +107,5 @@ ul {
     gap: 2.625rem;
   }
 
-  .desktopLinks li:last-of-type {
-    margin-left: 1px;
-  }
+ 
 }

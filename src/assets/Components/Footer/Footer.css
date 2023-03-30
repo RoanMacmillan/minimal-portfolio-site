@@ -20,6 +20,19 @@
   margin-bottom: 2.5rem;
 }
 
+header {
+  width: 100%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+
 footer a {
   color: #fafafa;
   font-family: "Public Sans";
@@ -127,18 +140,15 @@ footer a {
     width: 534px !important;
   }
 
-  footer {
-    margin-top: auto;
+  .bottomFooter,
+  .footerWrapper {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
   }
 
-  .App {
-    display: flex;
-    flex-direction: column;
-  }
+  .footerWrapper {
 
-  header {
-
-  
-  width: 100%;
+    height: 80px;
+    
   }
 }
