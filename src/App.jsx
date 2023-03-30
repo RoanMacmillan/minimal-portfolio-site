@@ -7,6 +7,7 @@ import PortfolioIndex from "./assets/Components/PortfolioIndex/PortfolioIndex";
 import PortfolioDetail from "./assets/Components/PortfolioDetail/PortfolioDetail";
 import portfolioItemsData from "../portfolioItemsData.json";
 import ContactPage from "./assets/Components/ContactPage/ContactPage";
+import ScrollToTop from "./assets/Components/ScrollToTop/ScrollToTop";
 import "./App.css";
 
 function App() {
@@ -15,12 +16,14 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Header />
+        <ScrollToTop>
         <Routes>
           <Route exact path="/" element={<HomePage />} />
           <Route path="/index" element={<PortfolioIndex />} />
           <Route path='/portfolio/:id' element={<PortfolioDetail portfolioItemsData={portfolioItemsData} />} />
           <Route path="/contact-me" element={<ContactPage />} />
         </Routes>
+        </ScrollToTop>
         <Footer />
       </BrowserRouter>
     </div>

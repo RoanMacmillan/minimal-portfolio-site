@@ -3,6 +3,7 @@ import "./HomePage.css";
 import DesktopHero from "../../images/homepage/desktop/image-homepage-hero@2x.jpg";
 import TabletHero from "../../images/homepage/tablet/image-homepage-hero.jpg";
 import ProfilePic from "../../images/homepage/mobile/image-homepage-profile@2x.jpg";
+import ButtonIcon from '../../images/icons/down-arrows.svg';
 import Button from "../Button/Button";
 import { Link } from "react-router-dom";
 const HomePage = () => {
@@ -26,8 +27,13 @@ const HomePage = () => {
         </div>
         <div className="aboutMeWrapper">
           <h1>Hey, I’m Alex Spencer and I love building beautiful websites</h1>
-          <button className="aboutBtn" type="button" onClick={scrollToAbout}>
-            about me
+          
+          <button className="aboutBtn scrollDownBtn" type="button" onClick={scrollToAbout}>
+            <div className="scrollDownWrapper">
+            <img src={ButtonIcon} alt='Button Icon'></img>
+            </div>
+            <span>about me</span>
+            
           </button>
         </div>
       </div>

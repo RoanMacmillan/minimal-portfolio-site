@@ -25,14 +25,11 @@ html {
 /* min body height */
 
 body {
-  background: #FAFAFA;
-  
+  background: #fafafa;
 }
 
 .App {
   min-height: 100vh;
-  
-  
 }
 
 /* responsive images/videos */
@@ -108,8 +105,8 @@ video {
   transition: all 0.2s ease;
 }
 
-.aboutBtn:hover {
-  background: #5fb4a2;
+.linksContainer a {
+  color: white;
 }
 
 @media screen and (min-width: 768px) {
@@ -156,10 +153,6 @@ video {
     gap: 15px;
   }
 
-  .socialContainer img:last-of-type {
-    margin-left: 1px;
-  }
-
   .linksContainer {
     margin: 0;
     margin-right: auto;
@@ -172,9 +165,7 @@ video {
   }
 }
 
-
 /* was supposed to be in './PortfolioItem.css' but encountered deploy issue */
-
 
 .indexLine {
   margin-top: 1.5rem;
@@ -240,15 +231,12 @@ video {
     padding-right: 96px;
   }
 
-  
-
   .manageItem,
   .insureItem {
     padding-right: 0;
   }
 
   .staticContainer {
-
     display: flex;
     gap: 32px;
   }
