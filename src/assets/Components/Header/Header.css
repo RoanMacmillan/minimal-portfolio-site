@@ -12,14 +12,16 @@ nav {
   align-items: center;
 }
 
-ul {
+.mobileLinks,
+.desktopLinks {
   list-style-type: none;
+  
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.mobileLinks li {
+.mobileLinks a {
   text-align: center;
   font-weight: 400;
   font-size: 12px;
@@ -29,6 +31,7 @@ ul {
   text-transform: uppercase;
   font-family: "Public Sans";
   color: #FAFAFA;
+  text-decoration: none;
 }
 
 .mobileMenu {
@@ -42,6 +45,7 @@ ul {
   justify-content: center;
   align-items: center;
   width: 223px;
+  z-index: 99999;
 }
 
 .mobileMenu.active {
