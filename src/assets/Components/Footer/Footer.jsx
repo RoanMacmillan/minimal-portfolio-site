@@ -24,28 +24,22 @@ const Footer = () => {
 
       <div className="bottomFooter">
         <div className="footerWrapper">
-        <Icon name="logo" className="logo" />
-        <div className="linksContainer">
-          <Link to='/'>
-          <a>home</a>
-          </Link>
-          <Link to='/index'>
-          <a>portfolio</a>
-          </Link>
-          <Link to="/contact-me">
-          <a>contact me</a>
-          </Link>
-        </div>
+          <Icon name="logo" className="logo" />
+          <div className="linksContainer">
+            <Link to="/">home</Link>
+            <Link to="/index">portfolio</Link>
+            <Link to="/contact-me">contact me</Link>
+          </div>
 
-        <div className="socialContainer">
-        <Link to='https://github.com/RoanMacmillan'>
-          <Icon name="github" className="socialIcon" />
-          </Link>
-          <Link to='https://twitter.com/Petequinnn'>
-          <Icon name="twitter" className="socialIcon" />
-          </Link>
-          <Icon name="linkedin" className="socialIcon" />
-        </div>
+          <div className="socialContainer">
+            <Link to="https://github.com/RoanMacmillan">
+              <Icon name="github" className="socialIcon" />
+            </Link>
+            <Link to="https://twitter.com/Petequinnn">
+              <Icon name="twitter" className="socialIcon" />
+            </Link>
+            <Icon name="linkedin" className="socialIcon" />
+          </div>
         </div>
       </div>
     </footer>

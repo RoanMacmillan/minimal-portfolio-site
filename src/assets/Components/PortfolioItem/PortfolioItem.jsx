@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../../Components/Button/Button";
-import "./PortfolioItem.css";
+
 import { Link } from "react-router-dom";
 
 const PortfolioItem = ({ id, imgSrc, title, description, className }) => {
