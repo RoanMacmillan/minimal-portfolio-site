@@ -6,6 +6,20 @@ header {
   padding-right: 2rem;
 }
 
+.textLogo {
+  font-weight: 400;
+    font-size: 18px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    /* text-transform: capitalize; */
+    font-family: "Public Sans";
+    color: #262626;
+    /* font-family: "Ibarra Real Nova", serif; */
+
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -13,7 +27,6 @@ nav {
 }
 
 .desktopLinks li:hover {
-
   cursor: pointer !important;
   color: #5fb4a2;
 }
@@ -21,7 +34,7 @@ nav {
 .mobileLinks,
 .desktopLinks {
   list-style-type: none;
-  
+
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -36,7 +49,7 @@ nav {
   letter-spacing: 2px;
   text-transform: uppercase;
   font-family: "Public Sans";
-  color: #FAFAFA;
+  color: #fafafa;
   text-decoration: none;
 }
 
@@ -46,7 +59,7 @@ nav {
   right: 2rem;
   top: 3.5rem;
   height: 11.625rem;
-  background: #33323d;
+  background: #262626;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,7 +93,6 @@ nav {
 
   .activeLink {
     color: #5fb4a2;
-    
   }
 
   .desktopNav {
@@ -100,7 +112,6 @@ nav {
     text-align: center;
     text-transform: uppercase;
     font-family: "Public Sans";
-    
   }
 
   .desktopLinks a {
@@ -118,6 +129,4 @@ nav {
   .desktopLinks {
     gap: 2.625rem;
   }
-
- 
 }

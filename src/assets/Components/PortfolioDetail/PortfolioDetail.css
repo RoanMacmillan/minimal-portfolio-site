@@ -19,7 +19,7 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
-  color: #33323d;
+  color: #262626;
   mix-blend-mode: normal;
   opacity: 0.8;
 }
@@ -54,7 +54,7 @@
   font-size: 32px;
   line-height: 42px;
   letter-spacing: -0.285714px;
-  color: #33323d;
+  color: #262626;
 }
 
 .portfolioDetail h4 {
@@ -64,11 +64,17 @@
   font-size: 32px;
   line-height: 42px;
   letter-spacing: -0.285714px;
-  color: #33323d;
+  color: #262626;
 }
 
 .staticWrapper {
   margin-top: 2rem;
+  /* box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px; */
+}
+
+.detail {
+
+  /* box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px; */
 }
 
 .desktopTest {
@@ -85,7 +91,6 @@
 
   .titleWrapper {
     display: flex;
-    
   }
 
   .titleChild {
@@ -109,50 +114,36 @@
     margin-top: auto;
     margin-bottom: 2rem;
   }
-
-  
 }
 
-
 @media screen and (min-width: 1154px) {
-
   .testtt {
-
     display: unset;
   }
 
   .desktopTest {
-
     display: none;
   }
 
   .desktopDetailWrapper {
-
     display: flex;
     justify-content: space-between;
-    
   }
 
-
   .titleChild {
-
     width: 350px !important;
-    
   }
 
   .titleChild h2 {
-
     margin-bottom: 29px !important;
     margin-top: 48px !important;
   }
 
   .backgroundContainer {
-
     width: 635px;
   }
 
   .titleChild {
-
     width: 100%;
   }
 
@@ -162,16 +153,13 @@
 
   .titleChild:last-of-type {
     display: none;
-    
   }
 
   .portfolioDetail {
-
     max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 0;
     padding-right: 0;
   }
-
 }

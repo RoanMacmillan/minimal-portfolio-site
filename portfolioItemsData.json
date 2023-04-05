@@ -1,17 +1,17 @@
 [
   {
     "id": "1",
-    "imgSrc": "/assets/images/portfolio/mobile/wave.png",
-    "detailSrc": "/assets/images/portfolio/mobile/gallerydetail.png",
+    "imgSrc": "/assets/images/portfolio/mobile/wave2.png",
+    "detailSrc": "/assets/images/detail/mobile/detail-final2.png",
     "title": "Galleria",
-    "description": "In this project, I built a responsive gallery site. It required me to implement a masonry layout, a slideshow and lightbox for the paintings. I used React, with CSS grid for the masonry layout. I also pulled the image data from a JSON file to save time.",
+    "description": "In this project, I built a responsive gallery site. I implemented a masonry layout, a slideshow and lightbox for the paintings. I used React, with CSS grid for the masonry layout. I also pulled the image data from a JSON file to save time.",
     "className": "portfolioItem galleriaItem",
     "method": "Interaction Design / Front End Development",
     "tools": "vite / react / css",
-    "backgroundDescription": "This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.",
-    "staticOne": "/assets/images/detail/mobile/gallery-static-1.jpg",
-    "staticTwo": "/assets/images/detail/mobile/gallery-static-2.png",
-    "staticThree": "/assets/images/detail/mobile/gallery-static-2.png",
+    "backgroundDescription": "This project was a challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.",
+    "staticOne": "/assets/images/detail/mobile/gallery-static-9.png",
+    "staticTwo": "/assets/images/detail/mobile/final-static-4.png",
+    "staticThree": "/assets/images/detail/mobile/final-static-1.png",
     "websiteUrl": "https://prismatic-bublanina-c0f8ef.netlify.app"
   },
   {
@@ -23,7 +23,7 @@
     "className": "portfolioItem manageItem",
     "method": "Interaction Design / Front End Development",
     "tools": "vite / react / css",
-    "staticOne": "/assets/images/detail/desktop/image-manage-preview-1@2x.jpg",
+    "staticThree": "/assets/images/detail/desktop/image-manage-preview-1@2x.jpg",
     "staticTwo": "/assets/images/detail/desktop/image-manage-preview-2@2x.jpg",
     "backgroundDescription": "This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style."
   },
@@ -36,7 +36,7 @@
     "className": "portfolioItem bookmarkItem",
     "method": "Interaction Design / Front End Development",
     "tools": "vite / react / css",
-    "staticOne": "/assets/images/detail/desktop/image-bookmark-preview-1@2x.jpg",
+    "staticThree": "/assets/images/detail/desktop/image-bookmark-preview-1@2x.jpg",
     "staticTwo": "/assets/images/detail/desktop/image-bookmark-preview-2@2x.jpg",
     "backgroundDescription": "This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style."
   },
@@ -49,7 +49,7 @@
     "className": "portfolioItem insureItem",
     "method": "Interaction Design / Front End Development",
     "tools": "vite / react / css",
-    "staticOne": "/assets/images/detail/desktop/image-insure-preview-1@2x.jpg",
+    "staticThree": "/assets/images/detail/desktop/image-insure-preview-1@2x.jpg",
     "staticTwo": "/assets/images/detail/desktop/image-insure-preview-2@2x.jpg",
     "backgroundDescription": "This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style."
   }

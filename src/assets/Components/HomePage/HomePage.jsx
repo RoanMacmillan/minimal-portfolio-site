@@ -1,8 +1,9 @@
 import React, { useRef, useCallback, useState, useEffect } from "react";
 import "./HomePage.css";
 import DesktopHero from "../../images/homepage/desktop/image-homepage-hero@2x.jpg";
+import NewHero from '../../images/homepage/desktop/hero-new.png'
 import TabletHero from "../../images/homepage/tablet/image-homepage-hero.jpg";
-import ProfilePic from "../../images/homepage/mobile/image-homepage-profile@2x.jpg";
+import ProfilePic from "../../images/homepage/mobile/me.jpg";
 import ButtonIcon from "../../images/icons/down-arrows.svg";
 import Button from "../Button/Button";
 import { Link } from "react-router-dom";
@@ -33,7 +34,7 @@ const HomePage = ({ className }) => {
           ></img>
         </div>
         <div className="aboutMeWrapper">
-          <h1>Hey, I’m Alex Spencer and I love building beautiful websites</h1>
+          <h1>Aspiring Frontend Developer, Based in Edinburgh</h1>
 
           <button
             className="aboutBtn scrollDownBtn"

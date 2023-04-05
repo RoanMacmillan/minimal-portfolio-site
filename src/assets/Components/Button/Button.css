@@ -7,9 +7,9 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   height: 3rem;
-  color: #33323d;
+  color: #262626;
   background: transparent;
-  border: 1px solid #33323d;
+  border: 1px solid #262626;
   transition: all .2s ease;
   display: flex;
   justify-content: center;
@@ -19,7 +19,7 @@
 
 .navBtn:hover {
 
-  background: #33323D;
+  background: #262626;
   color: #FAFAFA;
 }
 

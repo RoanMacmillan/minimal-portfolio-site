@@ -31,8 +31,9 @@ const Header = () => {
   return (
     <header ref={headerRef}>
       <nav>
-        <Link to="/">
-          <Icon name="logo" />
+        <Link className="textLogo" to="/">
+          {/* <Icon name="logo" /> */}
+          RM
         </Link>
         {isMobileMenuOpen ? (
           <img

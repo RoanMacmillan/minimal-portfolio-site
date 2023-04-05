@@ -80,13 +80,13 @@ const PortfolioDetail = ({ portfolioItemsData, className }) => {
         <h4>Static Previews</h4>
         <div className="staticContainer">
           <div className="staticWrapper">
-            <img src={staticOne} alt={title} />
+            <img src={staticThree} alt={title} />
           </div>
           <div className="staticWrapper">
             <img className="staticTwo" src={staticTwo} alt={title} />
           </div>
           {/* <div className="staticWrapper three">
-          <img className="staticThree" src={staticThree} alt={title} />
+          <img className="staticThree" src={staticOne} alt={title} />
         </div> */}
         </div>
       </div>

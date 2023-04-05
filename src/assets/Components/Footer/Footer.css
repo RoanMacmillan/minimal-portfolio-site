@@ -1,5 +1,5 @@
 .bottomFooter {
-  background: #33323d;
+  background: #262626;
 
   padding-top: 56px;
   padding-bottom: 56px;
@@ -76,7 +76,7 @@ footer a {
   line-height: 42px;
   text-align: center;
   letter-spacing: -0.357143px;
-  color: #33323d;
+  color: #262626;
 }
 
 .linksContainer a {
