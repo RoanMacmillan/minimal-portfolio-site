@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./ContactPage.css";
 import Icon from "../Icons/Icon";
-import Button from "../Button/Button";
+import Header from "../Header/Header";
 
 const ContactPage = ({ className }) => {
   const [name, setName] = useState("");
@@ -70,16 +70,12 @@ const ContactPage = ({ className }) => {
 
   return (
     <div className={`contactContainer ${className} ${loaded ? "loaded" : ""}`}>
-            <div className="line"></div>
-
       <div className="touchContainer">
-        {/* <div className="headingChild">
-        </div> */}
-        <h1>Contact</h1>
+        <div className="headingChild">
+          <h2>Get in Touch</h2>
+        </div>
 
         <div className="contactContentChild">
-        {/* <h1>Contact</h1> */}
-
           <p>
             I’d love to hear about what you’re working on and how I could help.
             I’m currently looking for a new role and am open to a wide range of
@@ -90,10 +86,7 @@ const ContactPage = ({ className }) => {
             and attention to detail. Please do feel free to check out my online
             profiles below and get in touch using the form.
           </p>
-
-          <div className="socialContainer contactSocial">
-        <Button text='Email me' className='navBtn contactBtn' />
-          <div className="iconContainer">
+          <div className="socialContainer">
             <Link to="https://github.com/RoanMacmillan">
               <Icon name="github" className="socialIcon" />
             </Link>
@@ -101,18 +94,90 @@ const ContactPage = ({ className }) => {
               <Icon name="twitter" className="socialIcon" />
             </Link>
             <Icon name="linkedin" className="socialIcon" />
-            </div>
-            <div className="email">Roanmacmillan@hotmail.com</div>
-            <div className="line mobileLine"></div>
-
           </div>
-          
         </div>
-        
       </div>
       <div className="line"></div>
 
-      
+      <div className="formContainer">
+        <div className="headingChild">
+          <h3>Contact Me</h3>
+        </div>
+        <div className="contactContentChild">
+          <form onSubmit={handleSubmit} noValidate>
+            <div className="formGroup">
+              <label htmlFor="name">Name</label>
+              {errors.name && <div className="error">{errors.name}</div>}
+
+              <input
+                // className={`mobileMenu ${isMobileMenuOpen ? "active" : "inactive"}`}
+                className={`formInput ${
+                  errors.name
+                    ? "inputError"
+                    : validateName(name) === ""
+                    ? "validInput"
+                    : ""
+                }`}
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Din Djarin"
+                value={name}
+                onChange={(event) => setName(event.target.value)}
+              />
+            </div>
+            <div className="formGroup">
+              <label htmlFor="email">Email Address</label>
+              {errors.email && <div className="error">{errors.email}</div>}
+
+              <input
+                className={`formInput ${
+                  errors.email
+                    ? "inputError"
+                    : validateEmail(email) === ""
+                    ? "validInput"
+                    : ""
+                }`}
+                type="email"
+                id="email"
+                name="email"
+                placeholder="email@example.com"
+                value={email}
+                onChange={(event) => setEmail(event.target.value)}
+              />
+            </div>
+            <div className="formGroup">
+              <label htmlFor="message">Message</label>
+              {errors.message && <div className="error">{errors.message}</div>}
+
+              <textarea
+                className={`formInput ${
+                  errors.message
+                    ? "inputError"
+                    : message.trim() !== ""
+                    ? "validInput"
+                    : ""
+                }`}
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="How can I help?"
+                value={message}
+                onChange={(event) => setMessage(event.target.value)}
+              ></textarea>
+            </div>
+            <div className="tyContainer">
+              <button className="aboutBtn" type="submit">Send Message</button>
+              {formSubmitted && (
+                <p className="thankyouMessage">
+                  Thank you for contacting me! I'll get back to you as soon as
+                  possible.
+                </p>
+              )}
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   );
 };

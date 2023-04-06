@@ -1,6 +1,6 @@
 .portfolioDetail {
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
 }
 
 .portfolioDetail h2 {
@@ -160,7 +160,7 @@
     max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 }

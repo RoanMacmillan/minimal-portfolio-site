@@ -1,16 +1,22 @@
 .contactContainer {
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
   width: 100%;
 }
 
-.contactContainer h1 {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 42px;
-  letter-spacing: -0.357143px;
-  color: #262626;
+.headingChild h2 {
   margin-bottom: 1.5rem;
+}
+
+.headingChild h3 {
+
+  margin-top: 1.5rem;
+}
+
+.headingChild h2, .headingChild h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400 !important;
+  font-size: 1.75rem;
 }
 
 .contactContainer p {
@@ -23,7 +29,7 @@
   mix-blend-mode: normal;
   opacity: 0.8;
   margin-bottom: 1.5rem;
-  max-width: 622px;
+  width: 98%;
 }
 
 .contactContainer .socialContainer {
@@ -32,11 +38,6 @@
 
 .contactContainer .socialIcon {
   filter: unset;
-  cursor: pointer;
-}
-.socialIcon:hover {
-  filter: invert(62%) sepia(51%) saturate(321%) hue-rotate(117deg)
-    brightness(95%) contrast(88%);
 }
 
 /* form  */
@@ -138,84 +139,67 @@ textarea::placeholder {
   margin-bottom: 50px;
 }
 
-.iconContainer {
 
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
+@media screen and (min-width: 1000px) {
 
-.contactSocial {
 
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  /* outline: 1px solid red; */
-  gap: 25px !important;
+  .contactContainer {
 
-}
+    max-width: 1174px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
 
-.contactBtn {
-
-  width: 150px;
-  cursor: pointer;
-}
-
-.touchContainer {
-
-  margin-bottom: 48px;
-  margin-top: 48px;
-}
-
-.contactContainer {
-
-  max-width: 1172px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.email {
-  font-family: "Public Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 30px;
-  color: #262626;
-  mix-blend-mode: normal;
-  opacity: 0.8;
-  margin-bottom: 1.5rem;
-  max-width: 622px;
-}
-
-.mobileLine {
-
-  outline: 1px solid red;
-  display: none;
-}
-
-@media screen and (min-width: 768px) {
-
-  .mobileLine {
-    display: none
   }
-}
 
+  .touchContainer,
+  .formContainer {
 
-@media screen and (min-width: 1150px) {
+    display: flex;
+    justify-content: space-between;
+  }
 
-.mobileLine {
-  display: none;
-}
-  
-.contactContentChild {
+  .touchContainer {
 
-  display: flex;
-  justify-content: space-between;
-}
+    margin-bottom: 48px;
+  }
 
-.contactContainer {
-  margin-top: 100px;
-}
+  .formContainer {
+
+    margin-top: 48px;
+  }
+
+  .contactContentChild {
+
+    width: 635px;
+  }
+
+  button[type="submit"] {
+    
+    margin-bottom: 0px !important;
+    
+  }
+
+  .tyContainer {
+
+    flex-direction: column;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* width: 100%; */
+    position: relative;
+    margin-bottom: 75px;
+    
+  }
+
+  .thankyouMessage {
+    
+    width: 100% !important;
+    position: absolute;
+    bottom: -70px;
+  }
+ 
+
   
 
 }
