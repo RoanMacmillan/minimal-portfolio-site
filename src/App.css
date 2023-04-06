@@ -1,9 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200;300;400;500;600;700&family=Sen:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 /* makes sizing simpler */
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+.buttonTitle {
+  font-family: "Lato", sans-serif;
+  font-weight: 400 !important;
+}
+
+@media screen and (min-width: 1154px) {
+  h1 {
+    font-size: 3.2rem !important;
+  }
 }
 
 /* remove default spacing */
@@ -159,8 +177,7 @@ video {
   
 }  */
 
-[data-id='1'] .three {
-
+[data-id="1"] .three {
   display: none;
 }
 
@@ -272,6 +289,11 @@ video {
 
   .siteWrapper {
     min-width: 339px;
+    max-width: 540px;
+  }
+
+  .detail {
+    max-width: unset;
   }
 
   .indexLine {
@@ -322,13 +344,9 @@ video {
     height: 336.38px;
     /* overflow: hidden; */
     overflow: hidden;
-    
-  } 
-
-  [data-id='1'] .three {
-
-    display: unset;
   }
 
- 
+  [data-id="1"] .three {
+    display: unset;
+  }
 }

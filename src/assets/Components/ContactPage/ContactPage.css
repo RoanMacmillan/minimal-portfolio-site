@@ -23,7 +23,7 @@
   mix-blend-mode: normal;
   opacity: 0.8;
   margin-bottom: 1.5rem;
-  width: 98%;
+  max-width: 622px;
 }
 
 .contactContainer .socialContainer {
@@ -32,6 +32,11 @@
 
 .contactContainer .socialIcon {
   filter: unset;
+  cursor: pointer;
+}
+.socialIcon:hover {
+  filter: invert(62%) sepia(51%) saturate(321%) hue-rotate(117deg)
+    brightness(95%) contrast(88%);
 }
 
 /* form  */
@@ -133,67 +138,84 @@ textarea::placeholder {
   margin-bottom: 50px;
 }
 
+.iconContainer {
 
-@media screen and (min-width: 1000px) {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 
+.contactSocial {
 
-  .contactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* outline: 1px solid red; */
+  gap: 25px !important;
 
-    max-width: 1174px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 60px;
+}
 
+.contactBtn {
+
+  width: 150px;
+  cursor: pointer;
+}
+
+.touchContainer {
+
+  margin-bottom: 48px;
+  margin-top: 48px;
+}
+
+.contactContainer {
+
+  max-width: 1172px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.email {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: #262626;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  margin-bottom: 1.5rem;
+  max-width: 622px;
+}
+
+.mobileLine {
+
+  outline: 1px solid red;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+  .mobileLine {
+    display: none
   }
+}
 
-  .touchContainer,
-  .formContainer {
 
-    display: flex;
-    justify-content: space-between;
-  }
+@media screen and (min-width: 1150px) {
 
-  .touchContainer {
+.mobileLine {
+  display: none;
+}
+  
+.contactContentChild {
 
-    margin-bottom: 48px;
-  }
+  display: flex;
+  justify-content: space-between;
+}
 
-  .formContainer {
-
-    margin-top: 48px;
-  }
-
-  .contactContentChild {
-
-    width: 635px;
-  }
-
-  button[type="submit"] {
-    
-    margin-bottom: 0px !important;
-    
-  }
-
-  .tyContainer {
-
-    flex-direction: column;
-    display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* width: 100%; */
-    position: relative;
-    margin-bottom: 75px;
-    
-  }
-
-  .thankyouMessage {
-    
-    width: 100% !important;
-    position: absolute;
-    bottom: -70px;
-  }
- 
-
+.contactContainer {
+  margin-top: 100px;
+}
   
 
 }

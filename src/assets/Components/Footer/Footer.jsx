@@ -25,21 +25,28 @@ const Footer = () => {
 
       <div className="bottomFooter">
         <div className="footerWrapper">
-          <Icon name="logo" className="logo" />
+          {/* <div className="textLogo footerLogo">RM</div> */}
+          <Icon name="logo" className='logo' />
+
           <div className="linksContainer">
             <Link to="/">home</Link>
             <Link to="/index">portfolio</Link>
             <Link to="/contact-me">contact me</Link>
           </div>
 
-          <div className="socialContainer">
+          <div className="socialContainer footerLinks">
             <Link to="https://github.com/RoanMacmillan">
               <Icon name="github" className="socialIcon" />
+              <div>github</div>
             </Link>
             <Link to="https://twitter.com/Petequinnn">
               <Icon name="twitter" className="socialIcon" />
+              <div>twitter</div>
             </Link>
+            <Link>
             <Icon name="linkedin" className="socialIcon" />
+            <div>linkedin</div>
+            </Link>
           </div>
         </div>
       </div>

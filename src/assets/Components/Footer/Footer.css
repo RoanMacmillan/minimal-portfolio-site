@@ -33,6 +33,10 @@ footer {
   margin-top: auto;
 }
 
+.footerLogo {
+  color: white;
+}
+
 footer a {
   color: white;
   font-family: "Public Sans";
@@ -50,6 +54,10 @@ footer a {
   filter: invert(100%) sepia(93%) saturate(27%) hue-rotate(99deg)
     brightness(107%) contrast(107%);
   transition: all 0.2s ease;
+}
+.logo {
+
+  width: 40px;
 }
 
 .socialContainer {
@@ -100,11 +108,41 @@ footer a {
     brightness(95%) contrast(88%);
 }
 
+.footerLinks div {
+
+  display: none;
+}
+
+
 @media screen and (min-width: 768px) {
   .interestedContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .footerWrapper {
+
+    height: 70px;
+    
+  }
+
+  .footerLinks .socialIcon {
+    display: none;
+  }
+
+  .footerLinks div {
+
+    display: unset;
+    color: white;
+  font-family: "Public Sans";
+  transition: all .2s ease;
+
+  }
+
+  .footerLinks div:hover {
+
+    color:#5fb4a2;
   }
 
   .interestedContainer h3 {
@@ -153,9 +191,5 @@ footer a {
     padding-bottom: 0 !important;
   }
 
-  .footerWrapper {
-
-    height: 80px;
-    
-  }
+  
 }
