@@ -29,6 +29,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  
 }
 
 .desktopLinks li:hover {
@@ -55,39 +57,52 @@ nav {
   text-transform: uppercase;
   font-family: "Public Sans";
   color: #fafafa;
+  color: #262626;
   text-decoration: none;
 }
 
 .mobileMenu {
   position: absolute;
   width: 100%;
-  right: 2rem;
-  top: 3.5rem;
-  height: 11.625rem;
+  right: 0;
+  top: 30px;
+  height: 14.625rem;
+  
   background: #262626;
+  background: #fafafa;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 223px;
-  z-index: 99999;
+  /* width: 223px; */
+  z-index: 999;
+  
+  
 }
 
 .mobileMenu.active {
   opacity: 1;
-  transition: all 0.2s ease;
+  transition: all 0.4s ease;
   visibility: visible;
+
 }
 
 .mobileMenu.inactive {
   opacity: 0;
   transition: all 0.2s ease;
-  top: 50px;
+  top: 20px;
   visibility: visible;
 }
 
 .desktopNav {
   display: none;
 }
+
+
+.mobileLinks .socialIcon {
+  filteR: unset;
+}
+
+
 
 /* media query for desktop nav menu  */
 

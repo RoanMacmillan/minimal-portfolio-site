@@ -5,6 +5,7 @@ import NewHero from '../../images/homepage/desktop/hero-new.png'
 import TabletHero from "../../images/homepage/tablet/image-homepage-hero.jpg";
 import ProfilePic from "../../images/homepage/mobile/me.jpg";
 import ButtonIcon from "../../images/icons/down-arrows.svg";
+import DesktopLanding from '../../images/homepage/desktop/landing-image.webp'
 import Button from "../Button/Button";
 import { Link } from "react-router-dom";
 const HomePage = ({ className }) => {
@@ -26,10 +27,10 @@ const HomePage = ({ className }) => {
     <main>
       <div className={`topContainer ${className} ${loaded ? "loaded" : ""} `}>
         <div className="heroImgWrapper">
-          <img className="mobileHero" src={TabletHero} alt="Mobile hero"></img>
+          <img className="mobileHero" src={DesktopLanding} alt="Mobile hero"></img>
           <img
             className="desktopHeroHome"
-            src={DesktopHero}
+            src={DesktopLanding}
             alt="Desktop hero"
           ></img>
         </div>

@@ -59,6 +59,17 @@ const Header = () => {
 
             <Link to="/index">Portfolio</Link>
             <Link to="/contact-me">Contact</Link>
+            <div className="socialContainer footerLinks">
+            <Link to="https://github.com/RoanMacmillan">
+              <Icon name="github" className="socialIcon" />
+            </Link>
+            <Link to="https://twitter.com/Petequinnn">
+              <Icon name="twitter" className="socialIcon" />
+            </Link>
+            <Link>
+            <Icon name="linkedin" className="socialIcon" />
+            </Link>
+          </div>
           </div>
         </div>
         <div className="desktopNav">

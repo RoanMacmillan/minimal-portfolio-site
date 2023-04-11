@@ -1,5 +1,6 @@
 .mobileHero {
   width: 100%;
+  position: relative;
 }
 
 main {
@@ -75,6 +76,18 @@ main h1 {
   width: 152px;
 }
 
+/* .aboutMeWrapper {
+  background: #fafafa !important;
+  z-index: 5000;
+  width: 245px;
+  padding-right: 3.5rem;
+  position: absolute;
+  padding-top: 56px;
+  left: -2px;
+  bottom: -2px;
+  
+} */
+
 .scrollDownBtn {
   display: flex;
   align-items: center;
@@ -90,12 +103,13 @@ main h1 {
   .aboutMeWrapper {
     background: #fafafa !important;
     z-index: 5000;
-    width: 75%;
+    width: 445px;
     padding-right: 3.5rem;
     position: absolute;
     padding-top: 56px;
-    left: -1px;
-    bottom: -1px;
+    left: -2px;
+    bottom: -2px;
+    
   }
 
   .topContainer {
@@ -109,6 +123,10 @@ main h1 {
   .aboutMeWrapper h1 {
     margin-top: 0px;
     max-width: unset;
+  }
+
+  .heroImgWrapper {
+    
   }
 
   .aboutChild {
@@ -127,12 +145,12 @@ main h1 {
   }
 
   .profileWrapper {
-    max-width: 540px;
+    max-width: 445px;
   }
 
   .profileWrapper img {
     object-fit: cover;
-    object-position: 80%;
+    object-position: 55%;
     width: 100%;
     height: 100%;
   }
@@ -164,8 +182,9 @@ main h1 {
     height: 357px;
     padding-right: 0px !important;
     padding-top: 0px !important;
-    bottom: 0;
+    bottom: -1px;
     left: -1px;
+    
   }
 
   .aboutMeWrapper h1 {
@@ -181,6 +200,19 @@ main h1 {
   .heroImgWrapper {
     display: flex;
     height: 600px;
+    width: 100% !important;
+    width: 1110px !important;
+    
+    overflow: hidden;
+    
+  }
+
+  .heroImgWrapper img {
+    width: 100%;
+    object-fit: cover;
+    
+    
+
   }
 
   .aboutMeWrapper button {
