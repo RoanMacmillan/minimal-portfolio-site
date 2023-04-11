@@ -37,15 +37,12 @@ const Footer = () => {
           <div className="socialContainer footerLinks">
             <Link to="https://github.com/RoanMacmillan">
               <Icon name="github" className="socialIcon" />
-              <div>github</div>
             </Link>
             <Link to="https://twitter.com/Petequinnn">
               <Icon name="twitter" className="socialIcon" />
-              <div>twitter</div>
             </Link>
             <Link>
             <Icon name="linkedin" className="socialIcon" />
-            <div>linkedin</div>
             </Link>
           </div>
         </div>

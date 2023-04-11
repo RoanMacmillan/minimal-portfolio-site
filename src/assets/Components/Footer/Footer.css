@@ -16,6 +16,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 }
@@ -64,6 +65,7 @@ footer a {
   display: flex;
   align-items: center;
   gap: 15px;
+  
 }
 
 .interestedContainer {
@@ -108,10 +110,7 @@ footer a {
     brightness(95%) contrast(88%);
 }
 
-.footerLinks div {
 
-  display: none;
-}
 
 
 @media screen and (min-width: 768px) {
@@ -127,18 +126,7 @@ footer a {
     
   }
 
-  .footerLinks .socialIcon {
-    display: none;
-  }
-
-  .footerLinks div {
-
-    display: unset;
-    color: white;
-  font-family: "Public Sans";
-  transition: all .2s ease;
-
-  }
+  
 
   .footerLinks div:hover {
 
