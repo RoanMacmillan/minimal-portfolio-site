@@ -6,16 +6,18 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 }
 
 h1,
 h2,
 h3,
 h4,
-.buttonTitle {
+.buttonTitle,
+.desktopLinks {
   font-family: "Lato", sans-serif;
   font-weight: 400 !important;
+  color: #262626;
 }
 
 @media screen and (min-width: 1154px) {
@@ -48,7 +50,11 @@ body {
 
 .App {
   min-height: 100vh;
+  
 }
+
+
+
 
 button:hover {
   cursor: pointer;

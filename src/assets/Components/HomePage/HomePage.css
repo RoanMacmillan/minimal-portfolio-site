@@ -76,17 +76,7 @@ main h1 {
   width: 152px;
 }
 
-/* .aboutMeWrapper {
-  background: #fafafa !important;
-  z-index: 5000;
-  width: 245px;
-  padding-right: 3.5rem;
-  position: absolute;
-  padding-top: 56px;
-  left: -2px;
-  bottom: -2px;
-  
-} */
+
 
 .scrollDownBtn {
   display: flex;
@@ -182,10 +172,14 @@ main h1 {
     height: 357px;
     padding-right: 0px !important;
     padding-top: 0px !important;
-    bottom: -1px;
-    left: -1px;
+    /* bottom: -1px; */
+    /* left: -1px; */
+    
     
   }
+
+
+ 
 
   .aboutMeWrapper h1 {
     font-weight: 700;

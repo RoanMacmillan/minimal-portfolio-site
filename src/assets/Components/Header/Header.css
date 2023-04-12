@@ -4,6 +4,7 @@ header {
   position: relative;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+  z-index: 9999 !important;
 }
 
 .textLogo {
@@ -29,8 +30,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+z-index: 999999999 !important;
 
-  
 }
 
 .desktopLinks li:hover {
@@ -52,45 +53,81 @@ nav {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
-  text-align: center;
+  text-align: right;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-family: "Public Sans";
   color: #fafafa;
   color: #262626;
   text-decoration: none;
+  
+}
+
+.mobileLinks {
+  margin-right: 1.25rem;
+  margin-top: 105px;
+  
+}
+
+.linkedIn {
+  
+  margin-top: 0px;
+
+}
+.mobileLine {
+  
+  margin-top: 25px !important;
+  margin-bottom: 25px !important;
+  
+}
+
+.mobileLogo {
+  position: absolute;
+  bottom: 32px;
+  width: 32px;
+  right: 1.25rem;
 }
 
 .mobileMenu {
-  position: absolute;
-  width: 100%;
+  position: fixed;
+  width: 200px;
   right: 0;
-  top: 30px;
-  height: 14.625rem;
+  top: 0;
+  height: 100%;
   
   background: #262626;
   background: #fafafa;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: right;
+  align-items: flex-start;
   /* width: 223px; */
-  z-index: 999;
+  z-index: 1;
   
   
 }
 
+.closeHam {
+  position: absolute;
+  top: 34px;
+  right: 20px;
+}
+
+
 .mobileMenu.active {
   opacity: 1;
-  transition: all 0.4s ease;
+  transition: all .2s ease;
   visibility: visible;
-
+  z-index: 9999;
 }
 
 .mobileMenu.inactive {
   opacity: 0;
-  transition: all 0.2s ease;
-  top: 20px;
+  transition: all .2s ease;
+  top: 0px;
   visibility: visible;
+  z-index: -100;
+  /* pointer-events: none; */
+  right: 0px;
 }
 
 .desktopNav {
@@ -98,8 +135,34 @@ nav {
 }
 
 
+
+
 .mobileLinks .socialIcon {
   filteR: unset;
+}
+
+.overlay {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  opacity: 0;
+  pointer-events: none;
+  display: unset;
+  transition: opacity 0.2s ease;
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.overlay.inactive {
+  opacity: 0;
+  pointer-events: none;
 }
 
 
@@ -108,6 +171,10 @@ nav {
 
 @media (min-width: 468px) {
   .mobileMenu {
+    display: none;
+  }
+
+  .overlay {
     display: none;
   }
 

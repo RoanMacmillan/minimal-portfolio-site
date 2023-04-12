@@ -14,63 +14,49 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const headerRef = useRef(null);
 
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (headerRef.current && !headerRef.current.contains(event.target)) {
-        setIsMobileMenuOpen(false);
-      }
-    };
-
-    document.addEventListener("click", handleClickOutside);
-
-    return () => {
-      document.removeEventListener("click", handleClickOutside);
-    };
-  }, [headerRef]);
-
   return (
     <header ref={headerRef}>
+      <div
+        className={`overlay ${isMobileMenuOpen ? "active" : "inactive"}`}
+        onClick={() => setIsMobileMenuOpen(false)}
+      ></div>
       <nav>
         <Link className="textLogo" to="/">
-          <Icon name="logo" className='headerLogo'/>
-          
+          <Icon name="logo" className="headerLogo" />
         </Link>
-        {isMobileMenuOpen ? (
-          <img
-            src={CloseBtn}
-            alt="Close button"
-            onClick={() => setIsMobileMenuOpen(false)}
-            className="hamburger"
-          />
-        ) : (
+        
+          
+        
           <img
             src={Hamburger}
             alt="Hamburger"
             onClick={() => setIsMobileMenuOpen(true)}
             className="hamburger"
           />
-        )}
+        
 
         <div
           className={`mobileMenu ${isMobileMenuOpen ? "active" : "inactive"}`}
         >
+          <img
+            src={CloseBtn}
+            alt="Close button"
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="hamburger closeHam"
+          />
           <div className="mobileLinks">
             <Link to="/">Home</Link>
 
             <Link to="/index">Portfolio</Link>
             <Link to="/contact-me">Contact</Link>
-            <div className="socialContainer footerLinks">
-            <Link to="https://github.com/RoanMacmillan">
-              <Icon name="github" className="socialIcon" />
-            </Link>
-            <Link to="https://twitter.com/Petequinnn">
-              <Icon name="twitter" className="socialIcon" />
-            </Link>
-            <Link>
-            <Icon name="linkedin" className="socialIcon" />
-            </Link>
+            <div className="line mobileLine"></div>
+
+            <Link className="linkedIn" to="/">Linkedin</Link>
+            <Link to="/index">Github</Link>
+            <Link to="/contact-me">Twitter</Link>
+            {/* <Icon name="logo" className="headerLogo mobileLogo" /> */}
           </div>
-          </div>
+          
         </div>
         <div className="desktopNav">
           <ul className="desktopLinks">
