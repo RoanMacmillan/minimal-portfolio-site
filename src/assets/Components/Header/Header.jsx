@@ -10,54 +10,103 @@ const Header = () => {
   const location = useLocation();
 
   const isActive = (path) => (location.pathname === path ? "activeLink" : "");
-
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const headerRef = useRef(null);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
   return (
     <header ref={headerRef}>
-      <div
-        className={`overlay ${isMobileMenuOpen ? "active" : "inactive"}`}
-        onClick={() => setIsMobileMenuOpen(false)}
-      ></div>
       <nav>
         <Link className="textLogo" to="/">
           <Icon name="logo" className="headerLogo" />
         </Link>
-        
-          
-        
-          <img
-            src={Hamburger}
-            alt="Hamburger"
-            onClick={() => setIsMobileMenuOpen(true)}
-            className="hamburger"
-          />
-        
 
-        <div
-          className={`mobileMenu ${isMobileMenuOpen ? "active" : "inactive"}`}
-        >
-          <img
-            src={CloseBtn}
-            alt="Close button"
-            onClick={() => setIsMobileMenuOpen(false)}
-            className="hamburger closeHam"
-          />
-          <div className="mobileLinks">
-            <Link to="/">Home</Link>
+        <img
+          src={Hamburger}
+          alt="Hamburger"
+          className="hamburger"
+          onClick={toggleMenu}
+        />
 
-            <Link to="/index">Portfolio</Link>
-            <Link to="/contact-me">Contact</Link>
-            <div className="line mobileLine"></div>
+{menuOpen && (
+          <>
+            <div
+              className="mobileNavOverlay"
+              onClick={toggleMenu}
+            ></div>
+            <div className="mobileNav">
+              <ul className="mobileLinks">
+                <li
+                  className={isActive("/")}
+                  onClick={() => {
+                    navigate("/");
+                    setMenuOpen(false);
+                  }}
+                >
+                  Home
+                </li>
+                <li
+                  className={isActive("/index")}
+                  onClick={() => {
+                    navigate("/index");
+                    setMenuOpen(false);
+                  }}
+                >
+                  Portfolio
+                </li>
+                <li
+                  className={isActive("/contact-me")}
+                  onClick={() => {
+                    navigate("/contact-me");
+                    setMenuOpen(false);
+                  }}
+                >
+                  contact me
+                </li>
+                
+                <div className="separator"></div>
+                <li
+                  className={isActive("/contact-me")}
+                  onClick={() => {
+                    navigate("/contact-me");
+                    setMenuOpen(false);
+                  }}
+                >
+                  github
+                </li>
+                <li
+                  className={isActive("/contact-me")}
+                  onClick={() => {
+                    navigate("/contact-me");
+                    setMenuOpen(false);
+                  }}
+                >
+                  twitter
+                </li>
+                <li
+                  className={isActive("/contact-me")}
+                  onClick={() => {
+                    navigate("/contact-me");
+                    setMenuOpen(false);
+                  }}
+                >
+                  linkedin
+                </li>
 
-            <Link className="linkedIn" to="/">Linkedin</Link>
-            <Link to="/index">Github</Link>
-            <Link to="/contact-me">Twitter</Link>
-            {/* <Icon name="logo" className="headerLogo mobileLogo" /> */}
-          </div>
-          
-        </div>
+              </ul>
+              <img
+                src={CloseBtn}
+                alt="Close"
+                className="closeBtn"
+                onClick={toggleMenu}
+              />
+            </div>
+          </>
+        )}
+
         <div className="desktopNav">
           <ul className="desktopLinks">
             <li className={isActive("/")} onClick={() => navigate("/")}>
