@@ -1,11 +1,11 @@
 import React, { useRef, useCallback, useState, useEffect } from "react";
 import "./HomePage.css";
 import DesktopHero from "../../images/homepage/desktop/image-homepage-hero@2x.jpg";
-import NewHero from '../../images/homepage/desktop/hero-new.png'
+import NewHero from "../../images/homepage/desktop/hero-new.png";
 import TabletHero from "../../images/homepage/tablet/image-homepage-hero.jpg";
 import ProfilePic from "../../images/homepage/mobile/me.jpg";
 import ButtonIcon from "../../images/icons/down-arrows.svg";
-import DesktopLanding from '../../images/homepage/desktop/landing-image.webp'
+import DesktopLanding from "../../images/homepage/desktop/landing-image.webp";
 import Button from "../Button/Button";
 import { Link } from "react-router-dom";
 const HomePage = ({ className }) => {
@@ -27,7 +27,11 @@ const HomePage = ({ className }) => {
     <main>
       <div className={`topContainer ${className} ${loaded ? "loaded" : ""} `}>
         <div className="heroImgWrapper">
-          <img className="mobileHero" src={DesktopLanding} alt="Mobile hero"></img>
+          <img
+            className="mobileHero"
+            src={DesktopLanding}
+            alt="Mobile hero"
+          ></img>
           <img
             className="desktopHeroHome"
             src={DesktopLanding}
@@ -43,7 +47,7 @@ const HomePage = ({ className }) => {
             onClick={scrollToAbout}
           >
             {/* <div className="scrollDownWrapper"> */}
-              <img className="arrowDown" src={ButtonIcon} alt="Button Icon"></img>
+            <img className="arrowDown" src={ButtonIcon} alt="Button Icon"></img>
             {/* </div> */}
             <span>about me</span>
           </button>
@@ -61,14 +65,14 @@ const HomePage = ({ className }) => {
           <div className="line imgLine"></div>
           <h2>About Me</h2>
           <p>
-            I’m a junior front-end developer looking for a new role in an
-            exciting company. I focus on writing accessible HTML, using modern
-            CSS practices and writing clean JavaScript. When writing JavaScript
-            code, I mostly use React, but I can adapt to whatever tools are
-            required. I’m based in London, UK, but I’m happy working remotely
-            and have experience in remote teams. When I’m not coding, you’ll
-            find me outdoors. I love being out in nature whether that’s going
-            for a walk, run or cycling. I’d love you to check out my work.
+            I'm an aspiring front-end developer looking for a new role. I focus
+            on writing accessible HTML, using modern CSS practices and writing
+            clean JavaScript. I've recently started learning React which I'm
+            really enjoying, I can see why it's so widely used. However I'm
+            eager to learn new practices and frameworks so I've just started to
+            pick up tailwind and look into Nextjs. I'm based in Edinburgh,
+            Scotland, but I'm happy working remotely. I'm currently working on
+            adding to my portfolio, you can check out what I have so far below!
           </p>
           <Link to="/index">
             <Button text="go to portfolio" className="navBtn goto" />

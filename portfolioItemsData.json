@@ -4,7 +4,7 @@
     "imgSrc": "/assets/images/portfolio/mobile/wave4.png",
     "detailSrc": "/assets/images/detail/mobile/detail-final2.png",
     "title": "Galleria",
-    "description": "In this project, I built a responsive gallery site. I implemented a masonry layout, a slideshow and lightbox for the paintings. I used React, with CSS grid for the masonry layout. I also pulled the image data from a JSON file to save time.",
+    "description": "In this project, I built a responsive gallery site. I implemented a masonry layout, a slideshow and lightbox for the images. I used React, with CSS grid for the masonry layout. I also pulled the image data from a JSON file to save time.",
     "className": "portfolioItem galleriaItem",
     "method": "Interaction Design / Front End Development",
     "tools": "vite / react / css",

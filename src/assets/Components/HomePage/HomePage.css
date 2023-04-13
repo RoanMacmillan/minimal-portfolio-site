@@ -40,7 +40,7 @@ main h1 {
 
 .aboutContainer h2 {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 32px;
   line-height: 42px;
   letter-spacing: -0.357143px;
   color: #33323d;
@@ -72,7 +72,7 @@ main h1 {
   text-align: center;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: white;
+  color: #fafafa;
   width: 152px;
 }
 
@@ -83,6 +83,10 @@ main h1 {
   align-items: center;
   justify-content: flex-start;
 }
+
+
+
+
 
 .arrowDown {
   padding: 15px;
@@ -100,6 +104,10 @@ main h1 {
     left: -2px;
     bottom: -2px;
     
+  }
+
+  .aboutContainer h2 {
+    font-size: 40px;
   }
 
   .topContainer {
@@ -127,6 +135,7 @@ main h1 {
     display: flex;
     gap: 4.3125rem;
     height: 600px;
+    
   }
 
   .aboutChild p {
@@ -148,6 +157,7 @@ main h1 {
   .aboutChild h2 {
     margin-top: 51px;
     margin-bottom: 28px;
+    
   }
 
   .goto {

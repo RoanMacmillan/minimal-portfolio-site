@@ -139,7 +139,7 @@ video {
 
 .portfolioIndex h2 {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 32px;
   line-height: 42px;
   letter-spacing: -0.357143px;
   color: #262626;
@@ -187,6 +187,10 @@ video {
 @media screen and (min-width: 768px) {
   button {
     cursor: pointer;
+  }
+
+  .portfolioIndex h2 {
+    font-size: 40px;
   }
 
   li {
