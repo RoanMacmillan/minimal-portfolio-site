@@ -104,6 +104,7 @@ main h1 {
     left: -2px;
     bottom: -2px;
     
+    
   }
 
   .aboutContainer h2 {
@@ -129,12 +130,14 @@ main h1 {
 
   .aboutChild {
     /* width: 50%; */
+    
   }
 
   .aboutContainer {
     display: flex;
     gap: 4.3125rem;
     height: 600px;
+    
     
   }
 
@@ -144,7 +147,7 @@ main h1 {
   }
 
   .profileWrapper {
-    max-width: 445px;
+    max-width: 545px;
   }
 
   .profileWrapper img {
