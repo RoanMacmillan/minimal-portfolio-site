@@ -22,7 +22,7 @@ const useIntersectionObserver = (options = {}) => {
       }
     }, options);
 
-    observer.observe(elementRef.current);
+    observer.observe(elementRef.current); 
 
     return () => {
       if (elementRef.current) {

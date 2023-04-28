@@ -9,12 +9,16 @@ main {
 }
 
 main h1 {
-  font-size: 40px;
-  line-height: 42px;
-  letter-spacing: -0.357143px;
-  color: #262626;
-  margin-top: 1.5rem;
-  max-width: 500px;
+  font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 50px;
+/* or 100% */
+margin-top: 2rem;
+max-width: 400px;
+letter-spacing: -0.446429px;
+
+color: #33323D;
 }
 
 .aboutBtn {

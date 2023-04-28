@@ -70,7 +70,7 @@ const ContactPage = ({ className }) => {
 
   return (
     <div className={`contactContainer ${className} ${loaded ? "loaded" : ""}`}>
-      {/* <div className="touchContainer">
+      <div className="touchContainer">
         <div className="headingChild">
           <h2>Get in Touch</h2>
         </div>
@@ -79,9 +79,12 @@ const ContactPage = ({ className }) => {
           <p>
             I’d love to hear about what you’re working on and how I could help.
             I’m currently looking for a new role and am open to a wide range of
-            opportunities. I'm based in Edinburgh but happy working remote. I’m a hard-working and positive
+            opportunities. My preference would be to find a position in a
+            company in London. But I’m also happy to hear about opportunites
+            that don’t fit that description. I’m a hard-working and positive
             person who will always approach each task with a sense of purpose
-            and attention to detail. Feel free to check out my socials below.
+            and attention to detail. Please do feel free to check out my online
+            profiles below and get in touch using the form.
           </p>
           <div className="socialContainer">
             <Link to="https://github.com/RoanMacmillan">
@@ -94,12 +97,11 @@ const ContactPage = ({ className }) => {
           </div>
         </div>
       </div>
-      <div className="line"></div> */}
+      <div className="line"></div>
 
       <div className="formContainer">
         <div className="headingChild">
           <h3>Let's talk</h3>
-          
         </div>
         <div className="contactContentChild">
           <form onSubmit={handleSubmit} noValidate>
@@ -165,7 +167,9 @@ const ContactPage = ({ className }) => {
               ></textarea>
             </div>
             <div className="tyContainer">
-              <button className="aboutBtn" type="submit">Send Message</button>
+              <button className="aboutBtn" type="submit">
+                Send Message
+              </button>
               {formSubmitted && (
                 <p className="thankyouMessage">
                   Thank you for contacting me! I'll get back to you as soon as
