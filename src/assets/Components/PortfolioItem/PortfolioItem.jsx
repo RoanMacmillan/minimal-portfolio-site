@@ -1,23 +1,25 @@
 import React, { useEffect, useState } from "react";
 import Button from "../../Components/Button/Button";
-
+import useIntersectionObserver from "../useIntersectionObserver/useIntersectionObserver";
 import { Link } from "react-router-dom";
 
 const PortfolioItem = ({ id, imgSrc, title, description, className, delay }) => {
 
-  const [loaded, setLoaded] = useState(false);
+  const [portfolioItemRef, portfolioItemVisible] = useIntersectionObserver();
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoaded(true);
-    }, delay);
-  }, [])
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setLoaded(true);
+  //   }, delay);
+  // }, [])
 
   return (
-    <div
-      className={`portfolioItem ${className} ${loaded ? "loaded" : ""}`}
-      data-id={id}
-    >
+    // <div
+    //   className={`portfolioItem ${className} ${loaded ? "loaded" : ""}`}
+    //   data-id={id}
+    // >
+      // <div className={`portfolioItem ${className}`}>
+       <div ref={portfolioItemRef} className={`portfolioItem ${className} ${portfolioItemVisible ? 'fadeInLoad' : 'hidden'}`} data-id={id}>
       <div className="imageContainer">
         <div className="siteWrapper">
           <img className="indexThumbnail" src={imgSrc} alt={title}></img>

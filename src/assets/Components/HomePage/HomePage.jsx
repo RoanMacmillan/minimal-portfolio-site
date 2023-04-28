@@ -1,22 +1,16 @@
 import React, { useRef, useCallback, useState, useEffect } from "react";
 import "./HomePage.css";
-import DesktopHero from "../../images/homepage/desktop/image-homepage-hero@2x.jpg";
-import NewHero from "../../images/homepage/desktop/hero-new.png";
-import TabletHero from "../../images/homepage/tablet/image-homepage-hero.jpg";
 import ProfilePic from "../../images/homepage/mobile/me.jpg";
 import ButtonIcon from "../../images/icons/down-arrows.svg";
 import DesktopLanding from "../../images/homepage/desktop/landing-image.webp";
 import Button from "../Button/Button";
 import { Link } from "react-router-dom";
+import useIntersectionObserver from "../useIntersectionObserver/useIntersectionObserver";
 const HomePage = ({ className }) => {
   const aboutRef = useRef(null);
-  const [loaded, setLoaded] = useState(false);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoaded(true);
-    }, 25);
-  }, []);
+  const [topContainerRef, topContainerVisible] = useIntersectionObserver();
+  const [aboutContainerRef, aboutContainerVisible] = useIntersectionObserver();
 
   const scrollToAbout = useCallback(() => {
     const aboutElement = aboutRef.current;
@@ -25,7 +19,12 @@ const HomePage = ({ className }) => {
 
   return (
     <main>
-      <div className={`topContainer ${className} ${loaded ? "loaded" : ""} `}>
+      <div
+        ref={topContainerRef}
+        className={`topContainer ${className} ${
+          topContainerVisible ? "fadeInLoad" : "hidden"
+        }`}
+      >
         <div className="heroImgWrapper">
           <img
             className="mobileHero"
@@ -46,17 +45,17 @@ const HomePage = ({ className }) => {
             type="button"
             onClick={scrollToAbout}
           >
-            {/* <div className="scrollDownWrapper"> */}
             <img className="arrowDown" src={ButtonIcon} alt="Button Icon"></img>
-            {/* </div> */}
             <span>about me</span>
           </button>
         </div>
       </div>
 
       <div
-        ref={aboutRef}
-        className={`aboutContainer ${className} ${loaded ? "loaded" : ""} `}
+        ref={aboutContainerRef}
+        className={`aboutContainer ${className} ${
+          aboutContainerVisible ? "fadeInLoad" : "hidden"
+        }`}
       >
         <div className="aboutChild profileWrapper">
           <img className="profilePic" src={ProfilePic} alt="Profile"></img>
