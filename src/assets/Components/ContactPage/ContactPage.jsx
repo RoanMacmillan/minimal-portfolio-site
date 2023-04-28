@@ -70,7 +70,7 @@ const ContactPage = ({ className }) => {
 
   return (
     <div className={`contactContainer ${className} ${loaded ? "loaded" : ""}`}>
-      {/* <div className="touchContainer">
+      <div className="touchContainer">
         <div className="headingChild">
           <h2>Get in Touch</h2>
         </div>
@@ -94,12 +94,11 @@ const ContactPage = ({ className }) => {
           </div>
         </div>
       </div>
-      <div className="line"></div> */}
+      <div className="line"></div>
 
       <div className="formContainer">
         <div className="headingChild">
-          <h3>Let's talk</h3>
-          
+          <h3>Contact Me</h3>
         </div>
         <div className="contactContentChild">
           <form onSubmit={handleSubmit} noValidate>

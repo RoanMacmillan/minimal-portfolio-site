@@ -3,21 +3,17 @@ import { useParams, Link,  } from "react-router-dom";
 import "./PortfolioDetail.css";
 import PortfolioNavigation from "../PortfolioNavigation/PortfolioNavigation";
 import Button from "../Button/Button";
-import useIntersectionObserver from "../useIntersectionObserver/useIntersectionObserver";
 
 const PortfolioDetail = ({ portfolioItemsData, className }) => {
   const { id } = useParams();
 
-  // const [loaded, setLoaded] = useState(false);
+  const [loaded, setLoaded] = useState(false);
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setLoaded(true);
-  //   }, 30);
-  // }, []);
-
-  const [portfolioDetailRef, portfolioDetailVisible] = useIntersectionObserver();
-  const [detailImageContainerRef, detailImageContainerVisible] = useIntersectionObserver();
+  useEffect(() => {
+    setTimeout(() => {
+      setLoaded(true);
+    }, 30);
+  }, []);
 
   const portfolioItem = portfolioItemsData.find((item) => item.id === id);
   const currentIndex = portfolioItemsData.findIndex((item) => item.id === id);
@@ -43,16 +39,11 @@ const PortfolioDetail = ({ portfolioItemsData, className }) => {
   
 
   return (
-    // <div
-    //   className={`portfolioDetail ${className}`}
-    //   data-id={id}
-    // >
-
-<div ref={portfolioDetailRef} className={`portfolioDetail ${className} ${portfolioDetailVisible ? 'fadeInLoad' : 'hidden'}`}>
-    
-
+    <div
+      className={`portfolioDetail ${className} ${loaded ? "loaded" : ""}`}
+      data-id={id}
+    >
       <div className="detailImageContainer">
-        
         <div className="siteWrapper detail">
           <img className="detailHero" src={detailSrc} alt={title} />
         </div>
@@ -81,17 +72,11 @@ const PortfolioDetail = ({ portfolioItemsData, className }) => {
             </div>
           </div>
           <div className="line detailLine"></div>
-
-          
-
           <div className="backgroundContainer">
             <h3>Project Background</h3>
             <p>{backgroundDescription}</p>
           </div>
         </div>
-
-        
-
         <h4>Static Previews</h4>
         <div className="staticContainer">
           <div className="staticWrapper">

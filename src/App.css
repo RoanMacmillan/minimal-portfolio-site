@@ -72,6 +72,62 @@ video {
   max-width: 100%;
 }
 
+/* transitions */
+
+.galleriaItem,
+.bookmarkItem {
+  opacity: 1;
+  transform: translateX(-20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.galleriaItem.loaded,
+.bookmarkItem.loaded {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.manageItem,
+.insureItem,
+.contactContainer {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.manageItem.loaded,
+.insureItem.loaded,
+.topContainer.loaded,
+.aboutContainer.loaded,
+.contactContainer.loaded {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.topContainer {
+  opacity: 0;
+  transform: translateX(10px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.aboutContainer {
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.portfolioDetail {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.portfolioDetail.loaded {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ------- */
 
 .line {
   width: 100%;
@@ -126,18 +182,6 @@ video {
 
 .linksContainer a {
   color: white;
-}
-
-
-.fadeInLoad {
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
-}
-
-.hidden {
-  opacity: 0;
-  visibility: hidden;
 }
 
 @media screen and (min-width: 768px) {
